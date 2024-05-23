@@ -1,0 +1,126 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Ranjith\\Learnings\\C#\\CsharpConsole\\CsharpConsole.csproj": {}
+  },
+  "projects": {
+    "C:\\Ranjith\\Learnings\\C#\\ClassLibrary1\\AccessModifiersClasses.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Ranjith\\Learnings\\C#\\ClassLibrary1\\AccessModifiersClasses.csproj",
+        "projectName": "AccessModifiersClasses",
+        "projectPath": "C:\\Ranjith\\Learnings\\C#\\ClassLibrary1\\AccessModifiersClasses.csproj",
+        "packagesPath": "C:\\Users\\sranjith\\.nuget\\packages\\",
+        "outputPath": "C:\\Ranjith\\Learnings\\C#\\ClassLibrary1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sranjith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Ranjith\\Learnings\\C#\\CsharpConsole\\CsharpConsole.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Ranjith\\Learnings\\C#\\CsharpConsole\\CsharpConsole.csproj",
+        "projectName": "CsharpConsole",
+        "projectPath": "C:\\Ranjith\\Learnings\\C#\\CsharpConsole\\CsharpConsole.csproj",
+        "packagesPath": "C:\\Users\\sranjith\\.nuget\\packages\\",
+        "outputPath": "C:\\Ranjith\\Learnings\\C#\\CsharpConsole\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sranjith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Ranjith\\Learnings\\C#\\ClassLibrary1\\AccessModifiersClasses.csproj": {
+                "projectPath": "C:\\Ranjith\\Learnings\\C#\\ClassLibrary1\\AccessModifiersClasses.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "JetBrains.Annotations": {
+              "target": "Package",
+              "version": "[2022.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

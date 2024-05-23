@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "brQma+aRsYtRGvNn+kpm2YsRdJeqe7fraPgVVLiSXhq2+hGsHSXG6WKBMybG3U7RVSsuTYweoaZhJ/71FHKt3A==",
+  "success": true,
+  "projectFilePath": "C:\\Ranjith\\Learnings\\C#\\MSTestProject\\MSTestProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sranjith\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
+    "C:\\Users\\sranjith\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
+    "C:\\Users\\sranjith\\.nuget\\packages\\microsoft.net.test.sdk\\16.5.0\\microsoft.net.test.sdk.16.5.0.nupkg.sha512",
+    "C:\\Users\\sranjith\\.nuget\\packages\\mstest.testframework\\2.2.7\\mstest.testframework.2.2.7.nupkg.sha512",
+    "C:\\Users\\sranjith\\.nuget\\packages\\selenium.support\\3.141.0\\selenium.support.3.141.0.nupkg.sha512",
+    "C:\\Users\\sranjith\\.nuget\\packages\\selenium.webdriver\\3.141.0\\selenium.webdriver.3.141.0.nupkg.sha512",
+    "C:\\Users\\sranjith\\.nuget\\packages\\selenium.webdriver.chromedriver\\94.0.4606.6100\\selenium.webdriver.chromedriver.94.0.4606.6100.nupkg.sha512"
+  ],
+  "logs": []
+}

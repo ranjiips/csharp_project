@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vDEHeTLSDbo2lP2HV0oaOblkC5PJ5HUNMWKPOoWc/DbkOhm+a4n4X4xiCtmPXaNAY+sg6Y0cm3Sd+Zlcbd0AJw==",
+  "success": true,
+  "projectFilePath": "C:\\Ranjith\\Learnings\\C#\\CsharpConsole\\CsharpConsole.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sranjith\\.nuget\\packages\\jetbrains.annotations\\2022.1.0\\jetbrains.annotations.2022.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
