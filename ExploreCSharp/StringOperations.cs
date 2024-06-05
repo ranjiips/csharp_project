@@ -35,5 +35,13 @@ namespace ExploreCSharp
             str.Append(str2);
             Console.WriteLine($"String builder example: {str}");
         }
+
+        public void ImplementExtensionMethodConcepts(string post)
+        {
+            var shortenedPost = post.Shorten(10);
+            Console.WriteLine($"Actual Post: {post}");
+            Console.WriteLine($"Shortened Post: {shortenedPost}");
+            
+        }
     }
 }

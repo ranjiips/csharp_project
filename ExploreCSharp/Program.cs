@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ExploreCSharp
 {
@@ -20,13 +23,14 @@ namespace ExploreCSharp
             BasicStringOperations();
             sumfunc();
             GenericCollectionConcepts();
+            ImplementExtensionMethods();
         }
 
         public static void sumfunc()
         {
             int i = 0;
             int sum = 0;
-            while(i<100)
+            while (i < 100)
             {
                 sum = sum + i;
                 sum = i + sum;
@@ -51,6 +55,7 @@ namespace ExploreCSharp
             linq.QueryTheProductDetails(30000);
             linq.QueryTheStudentRecord(7);
             linq.QueryTheStudentRecord(7, 80);
+            linq.LinQExpressionExamples();
         }
 
         public static void ImplementLambdaExpressions()
@@ -113,8 +118,8 @@ namespace ExploreCSharp
         {
             Console.WriteLine("\n***********  Implement Method Overloading Concepts***********\n");
             Polymorphism py = new Polymorphism();
-            Console.WriteLine($"Add two integers (5,6) is {py.Add(5,6)}");
-            Console.WriteLine($"Add two double values (5.5,8.6) is {py.Add(5.5,8.6)}");
+            Console.WriteLine($"Add two integers (5,6) is {py.Add(5, 6)}");
+            Console.WriteLine($"Add two double values (5.5,8.6) is {py.Add(5.5, 8.6)}");
             Console.WriteLine($"Concatenate two strings (Ranjith, Kumar) is {py.Add("Ranjith", "Kumar")}");
         }
 
@@ -139,7 +144,7 @@ namespace ExploreCSharp
 
             Encapsulation encObj = new Encapsulation("Chennai");
             encObj.Name = "Ranjith";
-            encObj.Birthdate = new DateTime(1985,02,10);
+            encObj.Birthdate = new DateTime(1985, 02, 10);
             encObj.Country = "India";
             encObj.DisplayDetails();
         }
@@ -176,6 +181,18 @@ namespace ExploreCSharp
             gc.UsingDictionary();
             gc.UsingStack();
             gc.UsingQueue();
+        }
+        public static void ImplementExtensionMethods()
+        {
+            Console.WriteLine("\n***********  Implement Extension Method Concepts***********\n");
+            StringOperations strObj = new StringOperations();
+            string post = "I am trying to implement the string extension method concepts by extending the String class";
+            strObj.ImplementExtensionMethodConcepts(post);
+
+            IEnumerable<int> numbers = new List<int>() { 1,22,53,14,75,60,47};
+            var max = numbers.Max();
+            Console.WriteLine($"The maximum number from the given list is: {max}");
+
         }
     }
 }

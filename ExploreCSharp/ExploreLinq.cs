@@ -26,8 +26,8 @@ namespace ExploreCSharp
 
     public class Book
     {
-        public string Title;
-        public int Price;
+        public string Title { get; set; }
+        public int Price { get; set; }
     }
     class ExploreLinq
     {
@@ -56,6 +56,7 @@ namespace ExploreCSharp
             new StudentMarks{ StudentID=110, StudentName="Sarath", Class=6, Tamil=66, English=88, Maths=40, Science=61, Social=57 }
         };
 
+        
         List<Book> BookDetails()
         {
             return new List<Book>
@@ -65,6 +66,18 @@ namespace ExploreCSharp
                 new Book() { Title = "Python", Price=297},
                 new Book() { Title = "SQL", Price=154},
                 new Book() { Title = "Selenium", Price=188}
+            };
+        }
+
+        public IEnumerable<Book> GetBookDetails()
+        {
+            return new List<Book>
+            {   
+                new Book() { Title = "Python", Price=297},
+                new Book() { Title = "SQL", Price=154},
+                new Book() { Title = "Java", Price=532},
+                new Book() { Title = "Selenium", Price=188},
+                new Book() { Title = "C#", Price=456}
             };
         }
 
@@ -172,11 +185,67 @@ namespace ExploreCSharp
         {
             //int num = 5;
             Func<int, int> sqrnum = num => num * num;
-            Console.WriteLine("Square root of {0} is {1}", num, sqrnum(num));
+            Console.WriteLine("\nSquare root of {0} is {1}", num, sqrnum(num));
 
-            //Func<int, int> multiple = n => n * num;
-            //var result = multiple(10);
-            //Console.WriteLine("{0} * {1} is {3}", 10, num, result);
+            Console.WriteLine("\n-------- Before Lambda Expression --------");
+            var cheapBooks = BookDetails().FindAll(IsCheaper);
+            Console.WriteLine("Book price Greater than 200 are:");
+            PrintBookDetails(cheapBooks);
+
+            Console.WriteLine("-------- With Lambda Expression --------");
+            var cheapbooks = BookDetails().FindAll(b => b.Price < 200);
+            Console.WriteLine("Book price less than 200 are:");
+            PrintBookDetails(cheapbooks);
+        }
+
+        static bool IsCheaper(Book book)
+        {
+            return book.Price > 200;
+        }
+
+        public void LinQExpressionExamples()
+        {
+            Console.WriteLine("\n-------- Before LinQ Expression --------");
+            var books = GetBookDetails();
+            var cheapBooks = new List<Book>();
+
+            foreach (var book in books)
+            {
+                if(book.Price < 200)
+                    cheapBooks.Add(book);
+            }
+            Console.WriteLine("Book price less than 200 are:");
+            PrintBookDetails(cheapBooks);
+
+            Console.WriteLine("-------- With LinQ Expression - OrderBy --------");
+            Console.WriteLine("Book price greater than 200 are:");
+            var cheapbooks = GetBookDetails().Where(b=>b.Price>200).OrderBy(b=>b.Title);
+            PrintBookDetails(cheapbooks);
+
+            Console.WriteLine("-------- With LinQ Expression - LINQ Extension Methods --------");
+            var getbooks = GetBookDetails()
+                                            .Where(b => b.Price > 200)
+                                            .OrderBy(b => b.Title)
+                                            .Select(b=>b.Title);
+            foreach (var book in getbooks)
+            {
+                Console.WriteLine(book);
+            }
+
+            Console.WriteLine("-------- With LinQ Expression - LINQ Query Operators --------");
+            var getcheaperbooks = from b in GetBookDetails()
+                                  where b.Price > 200
+                                  orderby b.Title
+                                  select b;
+            PrintBookDetails(getcheaperbooks);
+        }
+
+        public void PrintBookDetails(IEnumerable<Book> cheapBooks)
+        {
+            foreach (var book in cheapBooks)
+            {
+                Console.WriteLine(book.Title + " - Rs." + book.Price);
+            }
         }
     }
 }
