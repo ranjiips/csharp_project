@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -56,7 +57,7 @@ namespace ExploreCSharp
             new StudentMarks{ StudentID=110, StudentName="Sarath", Class=6, Tamil=66, English=88, Maths=40, Science=61, Social=57 }
         };
 
-        
+
         List<Book> BookDetails()
         {
             return new List<Book>
@@ -101,6 +102,9 @@ namespace ExploreCSharp
             var itemDetails = productdetails.OrderByDescending(e => e.Price);
             var itemInGivenPosition = itemDetails.ElementAt(position - 1);
             Console.WriteLine($"The {position} largest product from the given list " + itemInGivenPosition.ProductName + " and the Price is " + itemInGivenPosition.Price);
+
+            var mobilePrice = productdetails.Where(e => e.ProductName == "Motorola").Select(e => e.Price).FirstOrDefault();
+            Console.WriteLine($"Motorola Mobile price is {mobilePrice}");
         }
 
         public void FindMobilePriceFromArrayList(int position)
@@ -125,8 +129,27 @@ namespace ExploreCSharp
             int[] price2 = { 700, 350, 800, 300, 400, 600, 200, 150 };
             List<int> price1List = price1.ToList();
             List<int> price2List = price2.ToList();
+
+            var finalpriceList = price1List.Concat(price2List).ToList();
+            Console.WriteLine($"Concatenated price list values are: {string.Join(" ", finalpriceList)}");
+
             bool result = price1List.SequenceEqual(price2List);
             Console.WriteLine($"The give lists are sequence equal {result}");
+            
+            var maxprice = finalpriceList.Max(e => e);
+            Console.WriteLine($"Maximum price is {maxprice}");
+
+            var minprice = finalpriceList.Min(e=>e);
+            Console.WriteLine($"Minimum price is {minprice}");
+
+            var priceSum = finalpriceList.Sum(e=>e);
+            Console.WriteLine($"Price List sum is {priceSum}");
+
+            var averagePrice = finalpriceList.Average(e=>e);
+            Console.WriteLine($"Price List average is {averagePrice}");
+
+            var priceCount = finalpriceList.Count();
+            Console.WriteLine($"Price count is {priceCount}");
         }
 
         public void FindPatternMatch()
@@ -238,6 +261,22 @@ namespace ExploreCSharp
                                   orderby b.Title
                                   select b;
             PrintBookDetails(getcheaperbooks);
+
+            Console.WriteLine("\n-------- LinQ Extension Methods --------");
+            Console.WriteLine("---------------FirstOrDefault------------------");
+            var javabook = GetBookDetails().FirstOrDefault(b => b.Title == "Java");
+            Console.WriteLine(javabook.Title + " - Rs." + javabook.Price);
+            Console.WriteLine("-----------------Max and Min book Price----------------");
+            var maxprice = GetBookDetails().Max(b => b.Price);
+            var minprice = GetBookDetails().Min(b => b.Price);
+            Console.WriteLine(maxprice);
+            Console.WriteLine(minprice);
+            Console.WriteLine("---------Skip 2 books-------Take next 3 books----------------");
+            var skipbook = GetBookDetails().Skip(2).Take(3);
+            PrintBookDetails(skipbook);
+            Console.WriteLine("-------------Book Count-----------------");
+            var bookcount = GetBookDetails().Count();
+            Console.WriteLine(bookcount);
         }
 
         public void PrintBookDetails(IEnumerable<Book> cheapBooks)

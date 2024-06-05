@@ -34,24 +34,42 @@ namespace ExploreCSharp
 
         public void ReadContentFromCSVUsingLinq()
         {
-            //file path
-            string filepath = "C:/Ranjith/Learnings/Projects/itemdetails.csv";
-            //open the file
-            using (var reader = new StreamReader(filepath))
+            StreamReader reader = null;
+            try
             {
-                while (!reader.EndOfStream)
+                //file path
+                string filepath = "C:/Ranjith/Learnings/Projects/itemdetails.csv";
+                //open the file
+                using (reader = new StreamReader(filepath))
                 {
-                    //read the line 1 by 1
-                    var line = reader.ReadLine();
-                    //split the content using the delimeters
-                    var values = line.Split(",");
-                    //print it
-                    foreach(var val in values)
+                    while (!reader.EndOfStream)
                     {
-                        Console.Write(val + "\t");
+                        //read the line 1 by 1
+                        var line = reader.ReadLine();
+                        //split the content using the delimeters
+                        var values = line.Split(",");
+                        //print it
+                        foreach (var val in values)
+                        {
+                            Console.Write(val + "\t");
+                        }
+                        Console.WriteLine();
                     }
-                    Console.WriteLine();
                 }
+            }
+            catch(FileNotFoundException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Finally block");
+                if(reader!= null)
+                    reader.Dispose();
             }
         }
 
