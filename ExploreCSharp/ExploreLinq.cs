@@ -177,6 +177,31 @@ namespace ExploreCSharp
 
         }
 
+        public void SortTheStuduentRecords()
+        {
+            string print = "-";
+
+            var sortClass = StudentDetails.OrderBy(c => c.Class);
+            PrintDetails(sortClass);            
+            Console.WriteLine(print.RepeatValues(30));
+            var sortclasstamil = StudentDetails.OrderBy(c => c.Class).ThenBy(c => c.Tamil);
+            PrintDetails(sortclasstamil);
+            Console.WriteLine(print.RepeatValues(30));
+            var sortall = StudentDetails.OrderBy(c => c.Class).ThenBy(c => c.Tamil)
+                .ThenBy(c => c.English).ThenBy(c => c.Maths).ThenBy(c => c.Science)
+                .ThenBy(c => c.Social);
+            PrintDetails(sortall);
+        }
+
+        
+
+        public void PrintDetails(IEnumerable<StudentMarks> values)
+        {
+            foreach (StudentMarks s in values)
+                Console.WriteLine($"{s.StudentName} - {s.Class} - {s.Tamil} - {s.English} - {s.Maths} - {s.Science} - {s.Social}");
+
+        }
+
         public void QueryTheStudentRecord(int conditions)
         {
             IEnumerable<StudentMarks> record = from stu in StudentDetails
@@ -247,9 +272,9 @@ namespace ExploreCSharp
 
             Console.WriteLine("-------- With LinQ Expression - LINQ Extension Methods --------");
             var getbooks = GetBookDetails()
-                                            .Where(b => b.Price > 200)
-                                            .OrderBy(b => b.Title)
-                                            .Select(b=>b.Title);
+                                        .Where(b => b.Price > 200)
+                                        .OrderBy(b => b.Title)
+                                        .Select(b=>b.Title);
             foreach (var book in getbooks)
             {
                 Console.WriteLine(book);

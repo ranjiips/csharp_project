@@ -10,20 +10,22 @@ namespace ExploreCSharp
         static void Main(string[] args)
         {
             Console.WriteLine("Explore C Sharp");
-            ImplementLinqConcepts();
-            ImplementLambdaExpressions();
-            ImplementFileHandlingConcepts();
-            ImplementSamplePrograms();
-            ImplementEmployeeClass();
-            ImplementBankClass();
-            MethodOverloadingConcepts();
-            MethodOverRidingConcepts();
-            ImplementEncapsulationConcepts();
-            Boxing_Unboxing(5);
-            BasicStringOperations();
-            sumfunc();
-            GenericCollectionConcepts();
-            ImplementExtensionMethods();
+            //ImplementLinqConcepts();
+            //ImplementLambdaExpressions();
+            //ImplementCSVFileHandlingConcepts();
+            //ImplementExcelFileHandlingConcepts();
+            //ImplementSamplePrograms();
+            //ImplementEmployeeClass();
+            //ImplementBankClass();
+            //MethodOverloadingConcepts();
+            //MethodOverRidingConcepts();
+            //ImplementEncapsulationConcepts();
+            //Boxing_Unboxing(5);
+            //BasicStringOperations();
+            //sumfunc();
+            //GenericCollectionConcepts();
+            //ImplementExtensionMethods();
+            ImplementRestAPIMethods();
         }
 
         public static void sumfunc()
@@ -45,17 +47,19 @@ namespace ExploreCSharp
             //LINQ Class
             Console.WriteLine("\n***********  Implement Linq Concepts***********\n");
             ExploreLinq linq = new ExploreLinq();
-            linq.FindMobilePriceFromList(3);
-            linq.FindMobilePriceFromArrayList(8);
-            linq.IsTwoListSequenceEqual();
+            //linq.FindMobilePriceFromList(3);
+            //linq.FindMobilePriceFromArrayList(8);
+            //linq.IsTwoListSequenceEqual();
 
-            int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            linq.GetEvenAndOddNumbersFromList(numbers);
+            //int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //linq.GetEvenAndOddNumbersFromList(numbers);
 
-            linq.QueryTheProductDetails(30000);
-            linq.QueryTheStudentRecord(7);
-            linq.QueryTheStudentRecord(7, 80);
-            linq.LinQExpressionExamples();
+            //linq.QueryTheProductDetails(30000);
+            //linq.QueryTheStudentRecord(7);
+            //linq.QueryTheStudentRecord(7, 80);
+            //linq.LinQExpressionExamples();
+
+            linq.SortTheStuduentRecords();
         }
 
         public static void ImplementLambdaExpressions()
@@ -65,13 +69,35 @@ namespace ExploreCSharp
             linq.SampleLambdaExpressions(5);
         }
 
-        public static void ImplementFileHandlingConcepts()
+        public static void ImplementCSVFileHandlingConcepts()
         {
             //File Handling Class
-            Console.WriteLine("\n***********  Implement File Handling Concepts***********\n");
-            FileHandling file = new FileHandling();
-            //file.ReadContentFromCSV();
-            file.ReadContentFromCSVUsingLinq();
+            Console.WriteLine("\n***********  Implement CSV File Handling Concepts***********\n");
+            string filePath = "C:/Ranjith/Learnings/Projects/itemdetails.csv";
+            FileHandlingCSV csvfile = new FileHandlingCSV();
+            //csvfile.WriteContentIntoCSV(filePath);
+            csvfile.ReadContentFromCSV(filePath);
+            csvfile.ReadCSVContentLineByLine(filePath);
+            //csvfile.ReadCSVContentLineByLine(filePath, "Car");
+            csvfile.ReadCSVContentLineByLine(filePath, "Bus");
+        }
+
+        public static void ImplementExcelFileHandlingConcepts()
+        {
+            //File Handling Class
+            Console.WriteLine("\n***********  Implement Excel File Handling Concepts***********\n");
+            string filePath = "C:/Ranjith/Learnings/Projects/itemdetails.xlsx";
+            FileHandlingExcel excelfile = new FileHandlingExcel(filePath,1);
+            Console.WriteLine($"Excel content: {excelfile.ReadCell(0, 0)}");
+            excelfile.WriteGivenCell("B10","SampleText");
+            excelfile.ReadGivenCell("B10");
+            Console.WriteLine("-------------------------------------------------\n");
+            excelfile.WriteGivenCellRange("B2:B6", "SampleText");
+            excelfile.ReadCellRange();
+            Console.WriteLine("-------------------------------------------------\n");
+            excelfile.WriteMulitpleCells();
+            excelfile.ReadCellRange();
+            //excelfile.SaveWorkboox();
         }
 
         public static void ImplementSamplePrograms()
@@ -193,6 +219,18 @@ namespace ExploreCSharp
             var max = numbers.Max();
             Console.WriteLine($"The maximum number from the given list is: {max}");
 
+        }
+
+        public static void ImplementRestAPIMethods()
+        {
+            Console.WriteLine("\n***********  Implement Rest API Methods***********\n");
+            string apiurl = "https://rahulshettyacademy.com";
+            string getbookapiurl = "/Library/GetBook.php";
+            string queryParam = $"{getbookapiurl}?ID=AABD445";
+            HandleAPIs apiObj = new HandleAPIs(apiurl);
+            apiObj.DeleteBookAPI("/Library/DeleteBook.php", "AABD445");
+            apiObj.PostRequestAPI("/Library/Addbook.php");
+            apiObj.GetRequestAPI(queryParam);
         }
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Ranjith\\OneDrive\\Learnings\\CSharp\\ExploreCSharp\\ExploreCSharp.csproj": {}
+    "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\ExploreCSharp\\ExploreCSharp.csproj": {}
   },
   "projects": {
-    "C:\\Ranjith\\OneDrive\\Learnings\\CSharp\\ExploreCSharp\\ExploreCSharp.csproj": {
+    "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\ExploreCSharp\\ExploreCSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Ranjith\\OneDrive\\Learnings\\CSharp\\ExploreCSharp\\ExploreCSharp.csproj",
+        "projectUniqueName": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\ExploreCSharp\\ExploreCSharp.csproj",
         "projectName": "ExploreCSharp",
-        "projectPath": "C:\\Ranjith\\OneDrive\\Learnings\\CSharp\\ExploreCSharp\\ExploreCSharp.csproj",
+        "projectPath": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\ExploreCSharp\\ExploreCSharp.csproj",
         "packagesPath": "C:\\Users\\sranjith\\.nuget\\packages\\",
-        "outputPath": "C:\\Ranjith\\OneDrive\\Learnings\\CSharp\\ExploreCSharp\\obj\\",
+        "outputPath": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\ExploreCSharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sranjith\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -42,7 +47,23 @@
           "dependencies": {
             "CsvHelper": {
               "target": "Package",
-              "version": "[31.0.2, )"
+              "version": "[32.0.3, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[111.2.0, )"
+            },
+            "RestSharp.Serializers.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[111.2.0, )"
+            },
+            "System.Data.OleDb": {
+              "target": "Package",
+              "version": "[9.0.0-preview.4.24266.19, )"
             }
           },
           "imports": [
@@ -51,7 +72,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -60,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -22,5 +22,10 @@ namespace System
             }
             return string.Join(" ", words.Take(numofwords)) + "...";
         }
+
+        public static string RepeatValues(this string text, uint n)
+        {
+            return string.Concat(Enumerable.Repeat(text, (int)n));
+        }
     }
 }
