@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -93,6 +94,34 @@ namespace ExploreCSharp
             objQueue.Enqueue(3);
             // Display first value from Stack
             Console.WriteLine("First Get Value from Queue: {0}", objQueue.Dequeue());
+        }
+
+        public void RemoveDuplicatesFromStringArrayList()
+        {
+            Console.WriteLine("\n***********  Remove Duplicates from Array ***********\n");
+            string[] sArray = { "a", "b", "b", "c", "c", "d", "e", "f", "f" };
+            Console.WriteLine("\nOriginal Array List:");
+            for (int i = 0; i < sArray.Length; i++)
+            {
+                Console.Write(sArray[i]);
+            }
+            
+            var sList = new ArrayList();
+
+            for (int i = 0; i < sArray.Length; i++)
+            {
+                if (sList.Contains(sArray[i]) == false)
+                {
+                    sList.Add(sArray[i]);
+                }
+            }
+            Console.WriteLine("\nArray after remove the duplicates:");
+            var sNew = sList.ToArray();
+
+            for (int i = 0; i < sNew.Length; i++)
+            {
+                Console.Write(sNew[i]);
+            }
         }
     }
 }

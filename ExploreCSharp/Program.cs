@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using ExploreCSharp.SeleniumWeb;
 
 namespace ExploreCSharp
 {
@@ -11,7 +12,6 @@ namespace ExploreCSharp
         {
             Console.WriteLine("Explore C Sharp");
             //ImplementLinqConcepts();
-            //ImplementLambdaExpressions();
             //ImplementCSVFileHandlingConcepts();
             //ImplementExcelFileHandlingConcepts();
             //ImplementSamplePrograms();
@@ -25,7 +25,9 @@ namespace ExploreCSharp
             //sumfunc();
             //GenericCollectionConcepts();
             //ImplementExtensionMethods();
-            ImplementRestAPIMethods();
+            //ImplementRestAPIMethods();
+            ImplementJsonConcepts();
+            //ImplementSeleniumConcepts();
         }
 
         public static void sumfunc()
@@ -47,25 +49,22 @@ namespace ExploreCSharp
             //LINQ Class
             Console.WriteLine("\n***********  Implement Linq Concepts***********\n");
             ExploreLinq linq = new ExploreLinq();
-            //linq.FindMobilePriceFromList(3);
-            //linq.FindMobilePriceFromArrayList(8);
-            //linq.IsTwoListSequenceEqual();
+            linq.FindMobilePriceFromList(3);
+            linq.FindMobilePriceFromArrayList(8);
+            linq.IsTwoListSequenceEqual();
 
-            //int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            //linq.GetEvenAndOddNumbersFromList(numbers);
+            int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            linq.GetEvenAndOddNumbersFromList(numbers);
 
-            //linq.QueryTheProductDetails(30000);
-            //linq.QueryTheStudentRecord(7);
-            //linq.QueryTheStudentRecord(7, 80);
-            //linq.LinQExpressionExamples();
+            linq.QueryTheProductDetails(30000);
+            linq.QueryTheStudentRecord(7);
+            linq.QueryTheStudentRecord(7, 80);
+            linq.LinQExpressionExamples();
 
             linq.SortTheStuduentRecords();
-        }
+            linq.RemoveDuplicatesFromStringArrayUsingLinq();
 
-        public static void ImplementLambdaExpressions()
-        {
             Console.WriteLine("\n***********  Implement LambdaExpressions Concepts***********\n");
-            ExploreLinq linq = new ExploreLinq();
             linq.SampleLambdaExpressions(5);
         }
 
@@ -207,6 +206,7 @@ namespace ExploreCSharp
             gc.UsingDictionary();
             gc.UsingStack();
             gc.UsingQueue();
+            gc.RemoveDuplicatesFromStringArrayList();
         }
         public static void ImplementExtensionMethods()
         {
@@ -231,6 +231,58 @@ namespace ExploreCSharp
             apiObj.DeleteBookAPI("/Library/DeleteBook.php", "AABD445");
             apiObj.PostRequestAPI("/Library/Addbook.php");
             apiObj.GetRequestAPI(queryParam);
+        }
+
+        public static void ImplementJsonConcepts()
+        {
+            Console.WriteLine("\n***********  Implement Json Methods***********\n");
+            int jsonCount = Pages.FileHandlingJSON.GetValuesUsingIndex();
+            int jsonObjCount = Pages.FileHandlingJSON.GetValuesUsingValueMethod();
+        }
+
+        public static void ImplementSeleniumConcepts()
+        {
+            Console.WriteLine("\n***********  Implement Selenium Web Interaction Concepts***********\n");
+            string baseurl = "https://the-internet.herokuapp.com/";
+
+            Pages.SeleniumLoginLogoutActions.NavigateToURL(baseurl);
+
+            //Pages.SeleniumLoginLogoutActions.LoadPageByText("Form Authentication");
+            //Pages.SeleniumLoginLogoutActions.VerifyPageTitle("Login Page", Pages.SeleniumLoginLogoutActions.loginpageHeaderLocator);
+            //Pages.SeleniumLoginLogoutActions.LoginWithValidCredentials("tomsmith", "SuperSecretPassword!");
+            //Pages.SeleniumLoginLogoutActions.VerifyMessage("You logged into a secure area");
+            //Pages.SeleniumLoginLogoutActions.LogoutAction();
+            //Pages.SeleniumLoginLogoutActions.VerifyMessage("You logged out of the secure area");
+            //Pages.SeleniumLoginLogoutActions.BackToMainPage();
+
+            //Pages.SeleniumJavaScriptActions.ClickLinkByText("Basic Auth");
+            //Pages.SeleniumJavaScriptActions.EnterCredentialsInJSPopup();
+            //Pages.SeleniumJavaScriptActions.VerifyJavaScriptLoginMessage();
+            //Pages.SeleniumJavaScriptActions.BackToMainPage();
+
+            //Pages.SeleniumFormActions.LoadPageByText("Checkboxes");
+            //Pages.SeleniumFormActions.VerifyPageTitle("Checkboxes", Pages.SeleniumFormActions.checkboxPageHeaderLocator);
+            //Pages.SeleniumFormActions.UnselectAndSelectCheckbox();
+            //Pages.SeleniumFormActions.BackToMainPage();
+
+            //Pages.SeleniumMouseActions.LoadPageByText("Drag and Drop");
+            //Pages.SeleniumMouseActions.VerifyPageTitle("Drag and Drop", Pages.SeleniumFormActions.checkboxPageHeaderLocator);
+            //Pages.SeleniumMouseActions.DragAndDropAction();
+            //Pages.SeleniumFormActions.BackToMainPage();
+
+            //Pages.SeleniumFrames.LoadPageByText("Frames");
+            //Pages.SeleniumFrames.VerifyPageTitle("Frames", Pages.SeleniumFormActions.checkboxPageHeaderLocator);
+            //Pages.SeleniumFrames.LoadPageByText("Nested Frames");
+            //Pages.SeleniumFrames.SwitchToFrameAction();
+            //Pages.SeleniumFormActions.BackToMainPage();
+
+            Pages.SeleniumFrames.LoadPageByText("Multiple Windows");
+            Pages.SeleniumFrames.VerifyPageTitle("Opening a new window", Pages.SeleniumFormActions.checkboxPageHeaderLocator);
+            Pages.SeleniumMulitpleWindows.OpenChildWindow("New Window");
+            Pages.SeleniumFormActions.BackToMainPage();
+
+
+            Pages.SeleniumLoginLogoutActions.CloseBrowser();
         }
     }
 }

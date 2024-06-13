@@ -49,6 +49,10 @@
               "target": "Package",
               "version": "[32.0.3, )"
             },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -60,6 +64,22 @@
             "RestSharp.Serializers.NewtonsoftJson": {
               "target": "Package",
               "version": "[111.2.0, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[4.21.0, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.21.0, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[126.0.6478.5500, )"
+            },
+            "SeleniumExtras.WaitHelpers": {
+              "target": "Package",
+              "version": "[1.0.2, )"
             },
             "System.Data.OleDb": {
               "target": "Package",

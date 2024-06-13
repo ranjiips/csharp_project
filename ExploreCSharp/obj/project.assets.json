@@ -53,6 +53,12 @@
           }
         }
       },
+      "NUnit3TestAdapter/4.5.0": {
+        "type": "package",
+        "build": {
+          "build/netcoreapp3.1/NUnit3TestAdapter.props": {}
+        }
+      },
       "RestSharp/111.2.0": {
         "type": "package",
         "dependencies": {
@@ -84,6 +90,59 @@
           "lib/netstandard2.0/RestSharp.Serializers.NewtonsoftJson.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Selenium.Support/4.21.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.21.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.21.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Selenium.WebDriver.targets": {}
+        }
+      },
+      "Selenium.WebDriver.ChromeDriver/126.0.6478.5500": {
+        "type": "package",
+        "build": {
+          "build/Selenium.WebDriver.ChromeDriver.targets": {}
+        }
+      },
+      "SeleniumExtras.WaitHelpers/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.0.0-beta2"
+        },
+        "compile": {
+          "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -344,6 +403,33 @@
         "packageIcon.png"
       ]
     },
+    "NUnit3TestAdapter/4.5.0": {
+      "sha512": "s8JpqTe9bI2f49Pfr3dFRfoVSuFQyraTj68c3XXjIS/MRGvvkLnrg6RLqnTjdShX+AdFUCCU/4Xex58AdUfs6A==",
+      "type": "package",
+      "path": "nunit3testadapter/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net462/NUnit3.TestAdapter.dll",
+        "build/net462/NUnit3.TestAdapter.pdb",
+        "build/net462/NUnit3TestAdapter.props",
+        "build/net462/nunit.engine.api.dll",
+        "build/net462/nunit.engine.core.dll",
+        "build/net462/nunit.engine.dll",
+        "build/net462/testcentric.engine.metadata.dll",
+        "build/netcoreapp3.1/NUnit3.TestAdapter.dll",
+        "build/netcoreapp3.1/NUnit3.TestAdapter.pdb",
+        "build/netcoreapp3.1/NUnit3TestAdapter.props",
+        "build/netcoreapp3.1/nunit.engine.api.dll",
+        "build/netcoreapp3.1/nunit.engine.core.dll",
+        "build/netcoreapp3.1/nunit.engine.dll",
+        "build/netcoreapp3.1/testcentric.engine.metadata.dll",
+        "docs/README.md",
+        "nunit3testadapter.4.5.0.nupkg.sha512",
+        "nunit3testadapter.nuspec",
+        "nunit_256.png"
+      ]
+    },
     "RestSharp/111.2.0": {
       "sha512": "OkWr6AGM0zirdkRpxVOxXMWx9OHEIWrDzrpx1XIx5KyvTcmtjJVsKBscVkYTcFerhj5w5Bny7boRIV4a0ENGaQ==",
       "type": "package",
@@ -392,6 +478,77 @@
         "restsharp.png",
         "restsharp.serializers.newtonsoftjson.111.2.0.nupkg.sha512",
         "restsharp.serializers.newtonsoftjson.nuspec"
+      ]
+    },
+    "Selenium.Support/4.21.0": {
+      "sha512": "MiDIsB/5Ki1AWua/b9v/eGARtI6bxseAt4EOl2fgl7WsoXlV7Zzq5/gGJ7Zs9PLvJUQMbS6WSNWuMdeSr1SXdA==",
+      "type": "package",
+      "path": "selenium.support/4.21.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/WebDriver.Support.dll",
+        "lib/netstandard2.0/WebDriver.Support.xml",
+        "selenium.support.4.21.0.nupkg.sha512",
+        "selenium.support.nuspec"
+      ]
+    },
+    "Selenium.WebDriver/4.21.0": {
+      "sha512": "3xIx4CJunIoLEOROfDKILIzf76WfphTpQJYE98stG1GBVBKhFO5E6wXNfCqdiWt34iNlckcDr3z+qCD+RPfuUQ==",
+      "type": "package",
+      "path": "selenium.webdriver/4.21.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Selenium.WebDriver.targets",
+        "buildTransitive/Selenium.WebDriver.targets",
+        "icon.png",
+        "lib/netstandard2.0/WebDriver.dll",
+        "lib/netstandard2.0/WebDriver.xml",
+        "manager/linux/selenium-manager",
+        "manager/macos/selenium-manager",
+        "manager/windows/selenium-manager.exe",
+        "selenium.webdriver.4.21.0.nupkg.sha512",
+        "selenium.webdriver.nuspec"
+      ]
+    },
+    "Selenium.WebDriver.ChromeDriver/126.0.6478.5500": {
+      "sha512": "3aBvxIIY0F6CoEOuFH6WQUR63/lKaYCv6V9t3boQ86RFCGpT9z3izImAp9NG+eApfKE3f6Z05MFXjgE9IFzx0Q==",
+      "type": "package",
+      "path": "selenium.webdriver.chromedriver/126.0.6478.5500",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "build/DefinePropertiesChromeDriver.targets",
+        "build/Selenium.WebDriver.ChromeDriver.targets",
+        "driver/linux64/LICENSE.chromedriver",
+        "driver/linux64/chromedriver",
+        "driver/mac64/LICENSE.chromedriver",
+        "driver/mac64/chromedriver",
+        "driver/mac64arm/LICENSE.chromedriver",
+        "driver/mac64arm/chromedriver",
+        "driver/win32/LICENSE.chromedriver",
+        "driver/win32/chromedriver.exe",
+        "nupkg-icon.png",
+        "selenium.webdriver.chromedriver.126.0.6478.5500.nupkg.sha512",
+        "selenium.webdriver.chromedriver.nuspec"
+      ]
+    },
+    "SeleniumExtras.WaitHelpers/1.0.2": {
+      "sha512": "de7m30nkZZLkfCncYBdluUpM27AR/Vkk4kiA4HRQbV+fZI3ps4qGIeJCuj8TAMXdMfQik5Rno8xPnFBIod+ebg==",
+      "type": "package",
+      "path": "seleniumextras.waithelpers/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll",
+        "seleniumextras.waithelpers.1.0.2.nupkg.sha512",
+        "seleniumextras.waithelpers.nuspec"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -654,9 +811,14 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "CsvHelper >= 32.0.3",
+      "NUnit3TestAdapter >= 4.5.0",
       "Newtonsoft.Json >= 13.0.3",
       "RestSharp >= 111.2.0",
       "RestSharp.Serializers.NewtonsoftJson >= 111.2.0",
+      "Selenium.Support >= 4.21.0",
+      "Selenium.WebDriver >= 4.21.0",
+      "Selenium.WebDriver.ChromeDriver >= 126.0.6478.5500",
+      "SeleniumExtras.WaitHelpers >= 1.0.2",
       "System.Data.OleDb >= 9.0.0-preview.4.24266.19"
     ]
   },
@@ -708,6 +870,10 @@
             "target": "Package",
             "version": "[32.0.3, )"
           },
+          "NUnit3TestAdapter": {
+            "target": "Package",
+            "version": "[4.5.0, )"
+          },
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
@@ -719,6 +885,22 @@
           "RestSharp.Serializers.NewtonsoftJson": {
             "target": "Package",
             "version": "[111.2.0, )"
+          },
+          "Selenium.Support": {
+            "target": "Package",
+            "version": "[4.21.0, )"
+          },
+          "Selenium.WebDriver": {
+            "target": "Package",
+            "version": "[4.21.0, )"
+          },
+          "Selenium.WebDriver.ChromeDriver": {
+            "target": "Package",
+            "version": "[126.0.6478.5500, )"
+          },
+          "SeleniumExtras.WaitHelpers": {
+            "target": "Package",
+            "version": "[1.0.2, )"
           },
           "System.Data.OleDb": {
             "target": "Package",

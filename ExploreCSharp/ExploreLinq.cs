@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
@@ -309,6 +310,23 @@ namespace ExploreCSharp
             foreach (var book in cheapBooks)
             {
                 Console.WriteLine(book.Title + " - Rs." + book.Price);
+            }
+        }
+
+        public void RemoveDuplicatesFromStringArrayUsingLinq()
+        {
+            Console.WriteLine("\n***********  Remove Duplicates from Array ***********\n");
+            string[] sArray = { "a", "b", "b", "c", "c", "d", "e", "f", "f" };
+            Console.WriteLine("\nOriginal Array List:");
+            for (int i = 0; i < sArray.Length; i++)
+            {
+                Console.Write(sArray[i]);
+            }
+            Console.WriteLine("\nArray after remove the duplicates:");
+            var sNew = sArray.Distinct().ToArray();
+            for (int i = 0; i < sNew.Length; i++)
+            {
+                Console.Write(sNew[i]);
             }
         }
     }
