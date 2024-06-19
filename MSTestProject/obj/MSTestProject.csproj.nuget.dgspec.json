@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Ranjith\\Learnings\\C#\\MSTestProject\\MSTestProject.csproj": {}
+    "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MSTestProject\\MSTestProject.csproj": {}
   },
   "projects": {
-    "C:\\Ranjith\\Learnings\\C#\\MSTestProject\\MSTestProject.csproj": {
+    "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MSTestProject\\MSTestProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Ranjith\\Learnings\\C#\\MSTestProject\\MSTestProject.csproj",
+        "projectUniqueName": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MSTestProject\\MSTestProject.csproj",
         "projectName": "MSTestProject",
-        "projectPath": "C:\\Ranjith\\Learnings\\C#\\MSTestProject\\MSTestProject.csproj",
+        "projectPath": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MSTestProject\\MSTestProject.csproj",
         "packagesPath": "C:\\Users\\sranjith\\.nuget\\packages\\",
-        "outputPath": "C:\\Ranjith\\Learnings\\C#\\MSTestProject\\obj\\",
+        "outputPath": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MSTestProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sranjith\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -65,7 +70,7 @@
               "version": "[94.0.4606.6100, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

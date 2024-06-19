@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = MSTestProject
+build_property.ProjectDir = C:\Ranjith\Learnings\Projects\csharp_project\MSTestProject\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -17,6 +17,7 @@ namespace ExploreCSharp
         private static SeleniumMulitpleWindows _seleniumMulitpleWindows;
 
         private static FileHandlingJSON _fileHandlingJSON;
+        private static HandleInterfaces _handleInterfaces;
 
 
         public static SeleniumLoginLogoutActions SeleniumLoginLogoutActions => _loginLogoutActionsPage ?? (_loginLogoutActionsPage = new SeleniumLoginLogoutActions());
@@ -27,6 +28,7 @@ namespace ExploreCSharp
         public static SeleniumMulitpleWindows SeleniumMulitpleWindows => _seleniumMulitpleWindows ?? (_seleniumMulitpleWindows = new SeleniumMulitpleWindows());
 
         public static FileHandlingJSON FileHandlingJSON => _fileHandlingJSON ?? (_fileHandlingJSON = new FileHandlingJSON());
+        public static HandleInterfaces HandleInterfaces => _handleInterfaces??(_handleInterfaces = new HandleInterfaces());
 
     }
 }

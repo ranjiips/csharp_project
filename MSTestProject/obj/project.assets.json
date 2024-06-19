@@ -43,12 +43,20 @@
       "MSTest.TestFramework/2.2.7": {
         "type": "package",
         "compile": {
-          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll": {},
-          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {}
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll": {
+            "related": ".XML"
+          },
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {
+            "related": ".Extensions.XML;.XML"
+          }
         },
         "runtime": {
-          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll": {},
-          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {}
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll": {
+            "related": ".XML"
+          },
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {
+            "related": ".Extensions.XML;.XML"
+          }
         }
       },
       "Selenium.Support/3.141.0": {
@@ -60,10 +68,14 @@
           "System.Drawing"
         ],
         "compile": {
-          "lib/net45/WebDriver.Support.dll": {}
+          "lib/net45/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net45/WebDriver.Support.dll": {}
+          "lib/net45/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Selenium.WebDriver/3.141.0": {
@@ -72,10 +84,14 @@
           "System.Drawing"
         ],
         "compile": {
-          "lib/net45/WebDriver.dll": {}
+          "lib/net45/WebDriver.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net45/WebDriver.dll": {}
+          "lib/net45/WebDriver.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Selenium.WebDriver.ChromeDriver/94.0.4606.6100": {
@@ -350,11 +366,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Ranjith\\Learnings\\C#\\MSTestProject\\MSTestProject.csproj",
+      "projectUniqueName": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MSTestProject\\MSTestProject.csproj",
       "projectName": "MSTestProject",
-      "projectPath": "C:\\Ranjith\\Learnings\\C#\\MSTestProject\\MSTestProject.csproj",
+      "projectPath": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MSTestProject\\MSTestProject.csproj",
       "packagesPath": "C:\\Users\\sranjith\\.nuget\\packages\\",
-      "outputPath": "C:\\Ranjith\\Learnings\\C#\\MSTestProject\\obj\\",
+      "outputPath": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MSTestProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sranjith\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -377,6 +393,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -408,7 +429,7 @@
             "version": "[94.0.4606.6100, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

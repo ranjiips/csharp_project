@@ -26,8 +26,11 @@ namespace ExploreCSharp
             //GenericCollectionConcepts();
             //ImplementExtensionMethods();
             //ImplementRestAPIMethods();
-            ImplementJsonConcepts();
+            //ImplementJsonConcepts();
             //ImplementSeleniumConcepts();
+            //ImplementEnumerationConcepts();
+            //CountTheCharacters("abcdabcdpqr");
+            ImplementInterfaceConcepts();
         }
 
         public static void sumfunc()
@@ -40,14 +43,18 @@ namespace ExploreCSharp
                 sum = i + sum;
                 i += 1;
 
-            }
-            Console.WriteLine($"the sum is: {sum}");
+            }            
+            //Console.WriteLine($"the sum is: {sum}");
+            string message = $"the sum is: {sum}";
+            StaticClassExamples.ColorfulWriteLine(message, ConsoleColor.White);
         }
 
         public static void ImplementLinqConcepts()
         {
             //LINQ Class
-            Console.WriteLine("\n***********  Implement Linq Concepts***********\n");
+            string message = $"\n***********  Implement Linq Concepts***********\n";
+            StaticClassExamples.ColorfulWriteLine(message, ConsoleColor.Cyan);
+            //Console.WriteLine("\n***********  Implement Linq Concepts***********\n");
             ExploreLinq linq = new ExploreLinq();
             linq.FindMobilePriceFromList(3);
             linq.FindMobilePriceFromArrayList(8);
@@ -64,14 +71,16 @@ namespace ExploreCSharp
             linq.SortTheStuduentRecords();
             linq.RemoveDuplicatesFromStringArrayUsingLinq();
 
-            Console.WriteLine("\n***********  Implement LambdaExpressions Concepts***********\n");
+            //Console.WriteLine("\n***********  Implement LambdaExpressions Concepts***********\n");
+            string msg = "\n***********  Implement LambdaExpressions Concepts***********\n";
+            StaticClassExamples.ColorfulWriteLine(msg, ConsoleColor.Yellow);
             linq.SampleLambdaExpressions(5);
         }
 
         public static void ImplementCSVFileHandlingConcepts()
         {
             //File Handling Class
-            Console.WriteLine("\n***********  Implement CSV File Handling Concepts***********\n");
+            StaticClassExamples.ColorfulWriteLine("\n***********  Implement CSV File Handling Concepts***********\n",ConsoleColor.Green);
             string filePath = "C:/Ranjith/Learnings/Projects/itemdetails.csv";
             FileHandlingCSV csvfile = new FileHandlingCSV();
             //csvfile.WriteContentIntoCSV(filePath);
@@ -84,7 +93,7 @@ namespace ExploreCSharp
         public static void ImplementExcelFileHandlingConcepts()
         {
             //File Handling Class
-            Console.WriteLine("\n***********  Implement Excel File Handling Concepts***********\n");
+            StaticClassExamples.ColorfulWriteLine("\n***********  Implement Excel File Handling Concepts***********\n",ConsoleColor.Red);
             string filePath = "C:/Ranjith/Learnings/Projects/itemdetails.xlsx";
             FileHandlingExcel excelfile = new FileHandlingExcel(filePath,1);
             Console.WriteLine($"Excel content: {excelfile.ReadCell(0, 0)}");
@@ -102,7 +111,7 @@ namespace ExploreCSharp
         public static void ImplementSamplePrograms()
         {
             //Sample Programs in C#
-            Console.WriteLine("\n***********  Implement Sample Programs for Practice***********\n");
+            StaticClassExamples.ColorfulWriteLine("\n***********  Implement Sample Programs for Practice***********\n", ConsoleColor.DarkCyan);
             SamplePrograms sp = new SamplePrograms();
             sp.FibonacciSeries(10);
             sp.CovertFirstCharacterCase("upper case");
@@ -114,7 +123,7 @@ namespace ExploreCSharp
 
         public static void ImplementEmployeeClass()
         {
-            Console.WriteLine("\n***********  Implement Bank Class Concepts***********\n");
+            StaticClassExamples.ColorfulWriteLine("\n***********  Implement Bank Class Concepts***********\n", ConsoleColor.Red);
             //Bank class implementation
             BankClass bcObj = new BankClass();
             PermanentEmployee peObj = new PermanentEmployee();
@@ -128,7 +137,7 @@ namespace ExploreCSharp
 
         public static void ImplementBankClass()
         {
-            Console.WriteLine("\n***********  Implement Account class Concepts***********\n");
+            StaticClassExamples.ColorfulWriteLine("\n***********  Implement Account class Concepts***********\n", ConsoleColor.White);
             //Account class implementation
             Account accObj = new Account();
             accObj.Name = "Ranjith";
@@ -141,7 +150,7 @@ namespace ExploreCSharp
 
         public static void MethodOverloadingConcepts()
         {
-            Console.WriteLine("\n***********  Implement Method Overloading Concepts***********\n");
+            StaticClassExamples.ColorfulWriteLine("\n***********  Implement Method Overloading Concepts***********\n", ConsoleColor.Yellow);
             Polymorphism py = new Polymorphism();
             Console.WriteLine($"Add two integers (5,6) is {py.Add(5, 6)}");
             Console.WriteLine($"Add two double values (5.5,8.6) is {py.Add(5.5, 8.6)}");
@@ -150,7 +159,7 @@ namespace ExploreCSharp
 
         public static void MethodOverRidingConcepts()
         {
-            Console.WriteLine("\n***********  Implement Method Riding Concepts***********\n");
+            StaticClassExamples.ColorfulWriteLine("\n***********  Implement Method Riding Concepts***********\n", ConsoleColor.White);
             Animals ani = new Animals();
             Dog dogObj = new Dog();
             Cats catObj = new Cats();
@@ -165,7 +174,7 @@ namespace ExploreCSharp
 
         public static void ImplementEncapsulationConcepts()
         {
-            Console.WriteLine("\n***********  Implement Encapsulation Concepts***********\n");
+            StaticClassExamples.ColorfulWriteLine("\n***********  Implement Encapsulation Concepts***********\n", ConsoleColor.Magenta);
 
             Encapsulation encObj = new Encapsulation("Chennai");
             encObj.Name = "Ranjith";
@@ -175,7 +184,7 @@ namespace ExploreCSharp
         }
         public static void Boxing_Unboxing(int i)
         {
-            Console.WriteLine("\n***********  Implement Boxing and Unboxing Concepts***********\n");
+            StaticClassExamples.ColorfulWriteLine("\n***********  Implement Boxing and Unboxing Concepts***********\n", ConsoleColor.Red);
             object a = i;   //boxing
             int j = (int)a;   //unboxing
             Console.WriteLine($"Boxing: {a}");
@@ -184,7 +193,7 @@ namespace ExploreCSharp
 
         public static void BasicStringOperations()
         {
-            Console.WriteLine("\n***********  Implement Basic String Operations Concepts***********\n");
+            StaticClassExamples.ColorfulWriteLine("\n***********  Implement Basic String Operations Concepts***********\n", ConsoleColor.DarkCyan);
 
             StringOperations strObj = new StringOperations();
             string str1 = "Ranjith";
@@ -200,7 +209,7 @@ namespace ExploreCSharp
 
         public static void GenericCollectionConcepts()
         {
-            Console.WriteLine("\n***********  Implement Generics and Collection Concepts***********\n");
+            StaticClassExamples.ColorfulWriteLine("\n***********  Implement Generics and Collection Concepts***********\n", ConsoleColor.DarkYellow);
             GenericCollections gc = new GenericCollections();
             gc.UsingList();
             gc.UsingDictionary();
@@ -210,7 +219,7 @@ namespace ExploreCSharp
         }
         public static void ImplementExtensionMethods()
         {
-            Console.WriteLine("\n***********  Implement Extension Method Concepts***********\n");
+            StaticClassExamples.ColorfulWriteLine("\n***********  Implement Extension Method Concepts***********\n", ConsoleColor.DarkBlue);
             StringOperations strObj = new StringOperations();
             string post = "I am trying to implement the string extension method concepts by extending the String class";
             strObj.ImplementExtensionMethodConcepts(post);
@@ -223,7 +232,7 @@ namespace ExploreCSharp
 
         public static void ImplementRestAPIMethods()
         {
-            Console.WriteLine("\n***********  Implement Rest API Methods***********\n");
+            StaticClassExamples.ColorfulWriteLine("\n***********  Implement Rest API Methods***********\n", ConsoleColor.Yellow);
             string apiurl = "https://rahulshettyacademy.com";
             string getbookapiurl = "/Library/GetBook.php";
             string queryParam = $"{getbookapiurl}?ID=AABD445";
@@ -235,14 +244,14 @@ namespace ExploreCSharp
 
         public static void ImplementJsonConcepts()
         {
-            Console.WriteLine("\n***********  Implement Json Methods***********\n");
+            StaticClassExamples.ColorfulWriteLine("\n***********  Implement Json Methods***********\n", ConsoleColor.White);
             int jsonCount = Pages.FileHandlingJSON.GetValuesUsingIndex();
             int jsonObjCount = Pages.FileHandlingJSON.GetValuesUsingValueMethod();
         }
 
         public static void ImplementSeleniumConcepts()
         {
-            Console.WriteLine("\n***********  Implement Selenium Web Interaction Concepts***********\n");
+            StaticClassExamples.ColorfulWriteLine("\n***********  Implement Selenium Web Interaction Concepts***********\n", ConsoleColor.Magenta);
             string baseurl = "https://the-internet.herokuapp.com/";
 
             Pages.SeleniumLoginLogoutActions.NavigateToURL(baseurl);
@@ -283,6 +292,36 @@ namespace ExploreCSharp
 
 
             Pages.SeleniumLoginLogoutActions.CloseBrowser();
+        }
+
+        public static void ImplementEnumerationConcepts()
+        {
+            StaticClassExamples.ColorfulWriteLine("\n***********  Implement Enumeration Concepts***********\n", ConsoleColor.Green);
+            
+            EnumerationExamples enumex1 = new EnumerationExamples(EnumerationExamples.SelectNumbers.Four);
+            EnumerationExamples enumex2 = new EnumerationExamples(EnumerationExamples.SelectNumbers.Zero);
+            EnumerationExamples enumex3 = new EnumerationExamples(EnumerationExamples.SelectNumbers.Six);
+            
+            enumex1.PrintTheNumber();
+            enumex2.PrintTheNumber();
+            enumex3.PrintTheNumber();
+        }
+
+        public static void CountTheCharacters(string value)
+        {
+            List<char> characters = value.ToList();
+            foreach (char c in characters)
+            {
+                Console.WriteLine(c);
+                var count = characters.Count(e => e == c);
+                Console.WriteLine($"Character: {c}, Count is {count}");
+            }
+        }
+
+        public static void ImplementInterfaceConcepts()
+        {
+            StaticClassExamples.ColorfulWriteLine("\n***********  Implement Interface Concepts***********\n", ConsoleColor.Yellow);
+            Pages.HandleInterfaces.AddTwoNumbers(5, 6);
         }
     }
 }

@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MSTestProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D30BE46-E156-4044-AC8F-1929627C92F1}|MSTestProject.csproj|c:\\ranjith\\learnings\\projects\\csharp_project\\mstestproject\\testsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D30BE46-E156-4044-AC8F-1929627C92F1}|MSTestProject.csproj|solutionrelative:testsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D30BE46-E156-4044-AC8F-1929627C92F1}|MSTestProject.csproj|c:\\ranjith\\learnings\\projects\\csharp_project\\mstestproject\\driverfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D30BE46-E156-4044-AC8F-1929627C92F1}|MSTestProject.csproj|solutionrelative:driverfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D30BE46-E156-4044-AC8F-1929627C92F1}|MSTestProject.csproj|c:\\ranjith\\learnings\\projects\\csharp_project\\mstestproject\\pages\\page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D30BE46-E156-4044-AC8F-1929627C92F1}|MSTestProject.csproj|solutionrelative:pages\\page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D30BE46-E156-4044-AC8F-1929627C92F1}|MSTestProject.csproj|c:\\ranjith\\learnings\\projects\\csharp_project\\mstestproject\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3D30BE46-E156-4044-AC8F-1929627C92F1}|MSTestProject.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D30BE46-E156-4044-AC8F-1929627C92F1}|MSTestProject.csproj|c:\\ranjith\\learnings\\projects\\csharp_project\\mstestproject\\globalpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D30BE46-E156-4044-AC8F-1929627C92F1}|MSTestProject.csproj|solutionrelative:globalpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D30BE46-E156-4044-AC8F-1929627C92F1}|MSTestProject.csproj|c:\\ranjith\\learnings\\projects\\csharp_project\\mstestproject\\hooks\\basewebpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D30BE46-E156-4044-AC8F-1929627C92F1}|MSTestProject.csproj|solutionrelative:hooks\\basewebpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "app.config",
+              "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MSTestProject\\app.config",
+              "RelativeDocumentMoniker": "app.config",
+              "ToolTip": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MSTestProject\\app.config",
+              "RelativeToolTip": "app.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-06-12T05:56:00.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseWebPage.cs",
+              "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MSTestProject\\Hooks\\BaseWebPage.cs",
+              "RelativeDocumentMoniker": "Hooks\\BaseWebPage.cs",
+              "ToolTip": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MSTestProject\\Hooks\\BaseWebPage.cs",
+              "RelativeToolTip": "Hooks\\BaseWebPage.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABEAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T17:25:17.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Page.cs",
+              "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MSTestProject\\Pages\\Page.cs",
+              "RelativeDocumentMoniker": "Pages\\Page.cs",
+              "ToolTip": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MSTestProject\\Pages\\Page.cs",
+              "RelativeToolTip": "Pages\\Page.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T17:25:14.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DriverFactory.cs",
+              "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MSTestProject\\DriverFactory.cs",
+              "RelativeDocumentMoniker": "DriverFactory.cs",
+              "ToolTip": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MSTestProject\\DriverFactory.cs",
+              "RelativeToolTip": "DriverFactory.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAASwCUAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T17:25:00.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GlobalPage.cs",
+              "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MSTestProject\\GlobalPage.cs",
+              "RelativeDocumentMoniker": "GlobalPage.cs",
+              "ToolTip": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MSTestProject\\GlobalPage.cs",
+              "RelativeToolTip": "GlobalPage.cs",
+              "ViewState": "AQIAAGsAAAAAAAAAAAASwHkAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T17:25:05.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestSetup.cs",
+              "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MSTestProject\\TestSetup.cs",
+              "RelativeDocumentMoniker": "TestSetup.cs",
+              "ToolTip": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MSTestProject\\TestSetup.cs",
+              "RelativeToolTip": "TestSetup.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAiwBIAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T17:24:48.081Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

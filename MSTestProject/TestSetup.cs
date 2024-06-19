@@ -25,6 +25,7 @@ namespace MSTestProject
         [TestMethod]
         public void VerifyHomePage()
         {
+            Console.WriteLine("Testing");
             Assert.AreEqual("home",Page.HomePage.GetHomePageLabel());
         }
     }
