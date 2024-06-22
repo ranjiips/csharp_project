@@ -10,70 +10,56 @@ using System.Threading.Tasks;
 
 namespace MagicDestroyers.Characters.Melee
 {
-    public class Knight:Melee
-    {
-        private const string DEFAULT_NAME = "Warrior1";
-        private const int DEFAULT_LEVEL = 6;
-        private const int DEFAULT_HEALTHPOINTS = 70;
-        private const Faction DEFAULT_FACTION = Faction.Melee;
-        private const int DEFAULT_ABILITY_POINTS = 100;
+    public class Knight : Melee
+    {        
         private readonly Chainlink DEFAULT_BODY_ARMOR = new Chainlink();
         private readonly Hammer DEFAULT_WEAPON = new Hammer();
 
-        private Chainlink bodyArmor;
-        private Hammer weapon;        
+        public Knight() : this(Consts.Knight.NAME, Consts.Knight.LEVEL) { }
 
-        public Chainlink BodyArmor
-        {
-            get
-            {
-                return this.bodyArmor;
-            }
-            set
-            {
-                this.bodyArmor = value;
-            }
-        }
-        public Hammer Weapon
-        {
-            get
-            {
-                return this.weapon;
-            }
-            set
-            {
-                this.weapon = value;
-            }
-        }
-
-        public Knight():this(DEFAULT_NAME,DEFAULT_LEVEL) { }
-
-        public Knight(string name, int level):this(name, level, DEFAULT_HEALTHPOINTS){ }
+        public Knight(string name, int level) : this(name, level, Consts.Knight.HEALTHPOINTS) { }
 
         public Knight(string name, int level, int healthPoints)
         {
             base.Name = name;
             base.Level = level;
             base.HealthPoints = healthPoints;
-            base.Faction =  DEFAULT_FACTION;
-            base.AbilityPoints = DEFAULT_ABILITY_POINTS;
-            this.Weapon = DEFAULT_WEAPON;
-            this.BodyArmor = DEFAULT_BODY_ARMOR;
+            base.Faction = Consts.Knight.FACTION;
+            base.AbilityPoints = Consts.Knight.ABILITY_POINTS;
+            base.Weapon = DEFAULT_WEAPON;
+            base.BodyArmor = DEFAULT_BODY_ARMOR;
+            base.IsAlive = true;
+            base.Scores = 0;
         }
 
-        public void HolyBlow()
+        public int HolyBlow()
+        {
+            return base.Weapon.DamagePoints + 10;
+        }
+
+        public int PurifySoul()
         {
             throw new NotImplementedException();
         }
 
-        public void PurifySoul()
+        public int RighteousWings()
         {
-            throw new NotImplementedException();
+            return base.BodyArmor.ArmorPoints + 5;
         }
 
-        public void RighteousWings()
+        public override int Attack()
         {
-            throw new NotImplementedException();
+            return this.HolyBlow();
+        }
+
+        public override int SpecialAttack()
+        {
+            return this.PurifySoul();
+        }
+
+        public override int Defend()
+        {
+            return this.RighteousWings();
         }
     }
 }

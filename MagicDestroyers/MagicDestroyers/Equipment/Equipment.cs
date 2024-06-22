@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MagicDestroyers.Equipment
 {
-    public class Equipment
+    public abstract class Equipment
     {
     }
 }

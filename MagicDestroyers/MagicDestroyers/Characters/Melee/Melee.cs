@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MagicDestroyers.Characters.Melee
 {
-    public class Melee: Characters
+    public abstract class Melee: Character
     {
         private int abilityPoints;
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MagicDestroyers.Equipment.Weapons.Blunt
 {
-    public class Blunt:Weapons
+    public abstract class Blunt:Weapon
     {
     }
 }

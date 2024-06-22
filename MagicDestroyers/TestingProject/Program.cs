@@ -11,7 +11,7 @@ namespace TestingProject
             MagicDestroyers.Characters.Melee.Warrior warrior2 = new MagicDestroyers.Characters.Melee.Warrior();
             MagicDestroyers.Characters.Melee.Warrior warrior3 = new MagicDestroyers.Characters.Melee.Warrior();
 
-            Console.WriteLine($"Object counter: {MagicDestroyers.Characters.Melee.Warrior.ObjCounter}");
+            //Console.WriteLine($"Object counter: {MagicDestroyers.Characters.Melee.Warrior.ObjCounter}");
         }
     }
 }

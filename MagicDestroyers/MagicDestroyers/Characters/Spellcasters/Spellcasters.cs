@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MagicDestroyers.Characters.Spellcasters
 {
-    public class Spellcasters: Characters
+    public abstract class Spellcasters: Character
     {
         private int manaPoints;
 

@@ -25,11 +25,11 @@ namespace ExploreCSharp
         public HandleInterfaces()
         {
         }
-        public void AddTwoNumbers(int n1, int n2)
+        public int AddTwoNumbers(int n1, int n2)
         {
             this.Number1 = n1;
             this.Number2 = n2;
-            Console.WriteLine($"The sum of {this.Number1} and {this.Number2} is {this.Number1+ this.Number2}");
+            return Number1 + Number2;
         }
     }
 }

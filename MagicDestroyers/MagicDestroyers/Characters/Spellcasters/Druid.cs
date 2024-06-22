@@ -10,58 +10,56 @@ using System.Threading.Tasks;
 
 namespace MagicDestroyers.Characters.Spellcasters
 {
-    public class Druid:Spellcasters
-    {
-        private const string DEFAULT_NAME = "Warrior1";
-        private const int DEFAULT_LEVEL = 6;
-        private const int DEFAULT_HEALTHPOINTS = 70;
-        private const Faction DEFAULT_FACTION = Faction.Spellcaster;
-        private const int DEFAULT_MANA_POINTS = 100;
+    public class Druid : Spellcasters
+    {        
         private readonly LightLeatherVest DEFAULT_BODY_ARMOR = new LightLeatherVest();
         private readonly Staff DEFAULT_WEAPON = new Staff();
+        
+        public Druid() : this(Consts.Druid.NAME, Consts.Druid.LEVEL) { }
 
-        private LightLeatherVest bodyArmor;
-        private Staff weapon;
-
-        public LightLeatherVest BodyArmor
-        {
-            get { return this.bodyArmor; }
-            set { this.bodyArmor = value; }
-        }
-
-        public Staff Weapon
-        {
-            get { return weapon; }
-            set { this.weapon = value; }
-        }
-        public Druid():this(DEFAULT_NAME,DEFAULT_LEVEL) { }
-
-        public Druid(string name, int level):this(name, level, DEFAULT_HEALTHPOINTS) { }
+        public Druid(string name, int level) : this(name, level, Consts.Druid.HEALTHPOINTS) { }
 
         public Druid(string name, int level, int healthPoints)
         {
             base.Name = name;
             base.Level = level;
-            base.HealthPoints = healthPoints; 
-            base.Faction = DEFAULT_FACTION;
-            base.ManaPoints = DEFAULT_MANA_POINTS;
-            this.Weapon = DEFAULT_WEAPON;
-            this.BodyArmor = DEFAULT_BODY_ARMOR;
+            base.HealthPoints = healthPoints;
+            base.Faction = Consts.Druid.FACTION;
+            base.ManaPoints = Consts.Druid.MANA_POINTS;
+            base.Weapon = DEFAULT_WEAPON;
+            base.BodyArmor = DEFAULT_BODY_ARMOR;
+            base.IsAlive = true;
+            base.Scores = 0;
         }
 
-        public void Moonfire()
+        public int Moonfire()
+        {
+            return base.Weapon.DamagePoints + 10;
+        }
+
+        public int Starburst()
         {
             throw new NotImplementedException();
         }
 
-        public void Starburst()
+        public int OneWithTheNature()
         {
-            throw new NotImplementedException();
+            return base.BodyArmor.ArmorPoints + 5;
         }
 
-        public void OneWithTheNature()
+        public override int Attack()
         {
-            throw new NotImplementedException();
+            return this.Moonfire();
+        }
+
+        public override int SpecialAttack()
+        {
+            return this.Starburst();
+        }
+
+        public override int Defend()
+        {
+            return this.OneWithTheNature();
         }
     }
 }

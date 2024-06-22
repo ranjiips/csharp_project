@@ -14,67 +14,81 @@ namespace MagicDestroyers.Characters.Spellcasters
 {
     public class Mage:Spellcasters
     {
-        private const string DEFAULT_NAME = "Warrior1";
-        private const int DEFAULT_LEVEL = 6;
-        private const int DEFAULT_HEALTHPOINTS = 70;
-        private const Faction DEFAULT_FACTION = Faction.Spellcaster;
-        private const int DEFAULT_MANA_POINTS = 100;
+        
+
         private readonly ClothRobe DEFAULT_BODY_ARMOR = new ClothRobe();
         private readonly Staff DEFAULT_WEAPON = new Staff();
 
-        private ClothRobe bodyArmor;
-        private Staff weapon;
+        //private ClothRobe bodyArmor;
+        //private Staff weapon;
 
-        public ClothRobe BodyArmor
-        {
-            get
-            {
-                return this.bodyArmor;
-            }
-            set
-            {
-                this.bodyArmor = value;
-            }
-        }
-        public Staff Weapon
-        {
-            get
-            {
-                return this.weapon;
-            }
-            set
-            {
-                this.weapon = value;
-            }
-        }
-        public Mage():this(DEFAULT_NAME,DEFAULT_LEVEL) { }
+        //public ClothRobe BodyArmor
+        //{
+        //    get
+        //    {
+        //        return this.bodyArmor;
+        //    }
+        //    set
+        //    {
+        //        this.bodyArmor = value;
+        //    }
+        //}
+        //public Staff Weapon
+        //{
+        //    get
+        //    {
+        //        return this.weapon;
+        //    }
+        //    set
+        //    {
+        //        this.weapon = value;
+        //    }
+        //}
+        public Mage():this(Consts.Mage.NAME,Consts.Mage.LEVEL) { }
 
-        public Mage(string name, int level):this(name, level, DEFAULT_HEALTHPOINTS) { }
+        public Mage(string name, int level):this(name, level, Consts.Mage.HEALTHPOINTS) { }
 
         public Mage(string name, int level, int healthPoints)
         {
             base.Name = name;
             base.Level = level;
             base.HealthPoints = healthPoints;
-            base.Faction = DEFAULT_FACTION;
-            base.ManaPoints = DEFAULT_MANA_POINTS;
-            this.Weapon = DEFAULT_WEAPON;
-            this.BodyArmor = DEFAULT_BODY_ARMOR;
+            base.Faction = Consts.Mage.FACTION;
+            base.ManaPoints = Consts.Mage.MANA_POINTS;
+            base.Weapon = DEFAULT_WEAPON;
+            base.BodyArmor = DEFAULT_BODY_ARMOR;
+            base.IsAlive = true;
+            base.Scores = 0;
         }
 
-        public void ArcaneWrath()
+        public int ArcaneWrath()
         {
             throw new NotImplementedException();
         }
 
-        public void Firewall()
+        public int Fireball()
         {
-            throw new NotImplementedException();
+            return base.Weapon.DamagePoints + 5;
         }
 
-        public void Meditation()
+        public int Meditation()
         {
-            throw new NotImplementedException();
+            return base.BodyArmor.ArmorPoints + 5;
+        }
+
+        public override int Attack()
+        {
+            return this.Fireball();
+        }
+
+        public override int Defend()
+        {
+            return this.Meditation();
+        }
+
+        public override int SpecialAttack()
+        {
+            return this.ArcaneWrath();
         }
     }
 }

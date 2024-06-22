@@ -1,0 +1,15 @@
+C:\Ranjith\Learnings\Projects\csharp_project\MagicDestroyers\MagicDestroyers\bin\Debug\net8.0\MagicDestroyers.exe
+C:\Ranjith\Learnings\Projects\csharp_project\MagicDestroyers\MagicDestroyers\bin\Debug\net8.0\MagicDestroyers.deps.json
+C:\Ranjith\Learnings\Projects\csharp_project\MagicDestroyers\MagicDestroyers\bin\Debug\net8.0\MagicDestroyers.runtimeconfig.json
+C:\Ranjith\Learnings\Projects\csharp_project\MagicDestroyers\MagicDestroyers\bin\Debug\net8.0\MagicDestroyers.dll
+C:\Ranjith\Learnings\Projects\csharp_project\MagicDestroyers\MagicDestroyers\bin\Debug\net8.0\MagicDestroyers.pdb
+C:\Ranjith\Learnings\Projects\csharp_project\MagicDestroyers\MagicDestroyers\obj\Debug\net8.0\MagicDestroyers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Ranjith\Learnings\Projects\csharp_project\MagicDestroyers\MagicDestroyers\obj\Debug\net8.0\MagicDestroyers.AssemblyInfoInputs.cache
+C:\Ranjith\Learnings\Projects\csharp_project\MagicDestroyers\MagicDestroyers\obj\Debug\net8.0\MagicDestroyers.AssemblyInfo.cs
+C:\Ranjith\Learnings\Projects\csharp_project\MagicDestroyers\MagicDestroyers\obj\Debug\net8.0\MagicDestroyers.csproj.CoreCompileInputs.cache
+C:\Ranjith\Learnings\Projects\csharp_project\MagicDestroyers\MagicDestroyers\obj\Debug\net8.0\MagicDestroyers.sourcelink.json
+C:\Ranjith\Learnings\Projects\csharp_project\MagicDestroyers\MagicDestroyers\obj\Debug\net8.0\MagicDestroyers.dll
+C:\Ranjith\Learnings\Projects\csharp_project\MagicDestroyers\MagicDestroyers\obj\Debug\net8.0\refint\MagicDestroyers.dll
+C:\Ranjith\Learnings\Projects\csharp_project\MagicDestroyers\MagicDestroyers\obj\Debug\net8.0\MagicDestroyers.pdb
+C:\Ranjith\Learnings\Projects\csharp_project\MagicDestroyers\MagicDestroyers\obj\Debug\net8.0\MagicDestroyers.genruntimeconfig.cache
+C:\Ranjith\Learnings\Projects\csharp_project\MagicDestroyers\MagicDestroyers\obj\Debug\net8.0\ref\MagicDestroyers.dll

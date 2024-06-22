@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MagicDestroyers.Equipment.Armors.Leather
 {
-    public class Leather:Armors
+    public abstract class Leather:Armor
     {
         
     }

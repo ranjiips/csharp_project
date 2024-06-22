@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MagicDestroyers.Equipment.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,16 +7,28 @@ using System.Threading.Tasks;
 
 namespace MagicDestroyers.Equipment.Weapons.Blunt
 {
-    public class Staff:Weapons
+    public class Staff: Blunt, IBuff
     {
-        private const int DEFAULT_DAMAGE = 10;
-        public Staff() : this(DEFAULT_DAMAGE)
+        private const int DEFAULT_DAMAGE_POINTS = 10;
+        public Staff() : this(DEFAULT_DAMAGE_POINTS)
         {
 
         }
-        public Staff(int damagePoints)
+        public Staff(int armorPoints)
         {
-            this.Damage = damagePoints;
+            this.DamagePoints = armorPoints;
+        }
+
+        public override void SpecialAbility()
+        {
+            this.Buff();
+        }
+
+        public void Buff()
+        {
+            this.Empower();
+            // More buff abilities...
+            // ...
         }
 
         public void Empower()

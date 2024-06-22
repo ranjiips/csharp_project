@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MagicDestroyers.Equipment.Armors.Heavy
 {
-    public class Chainlink:Armors
+    public class Chainlink:Armor
     {
         private const int DEFAULT_ARMOR_POINTS = 10;
         public Chainlink():this(DEFAULT_ARMOR_POINTS)

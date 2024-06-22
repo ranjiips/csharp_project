@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MagicDestroyers.Equipment.Armors.Leather
 {
-    public class LightLeatherVest:Armors
+    public class LightLeatherVest:Armor
     {
         private const int DEFAULT_ARMOR_POINTS = 10;
 

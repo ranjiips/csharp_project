@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MagicDestroyers.Equipment.Armors.Light
 {
-    public class ClothRobe:Armors
+    public class ClothRobe:Armor
     {
         private const int DEFAULT_ARMOR_POINTS = 10;
 

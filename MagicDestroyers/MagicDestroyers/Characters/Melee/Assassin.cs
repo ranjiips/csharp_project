@@ -11,69 +11,55 @@ using MagicDestroyers.Enums;
 
 namespace MagicDestroyers.Characters.Melee
 {
-    public class Assassin:Melee
+    public class Assassin : Melee
     {
-        private const string DEFAULT_NAME = "Warrior1";
-        private const int DEFAULT_LEVEL = 6;
-        private const int DEFAULT_HEALTHPOINTS = 70;
-        private const Faction DEFAULT_FACTION = Faction.Melee;
-        private const int DEFAULT_ABILITY_POINTS = 100;
         private readonly LightLeatherVest DEFAULT_BODY_ARMOR = new LightLeatherVest();
         private readonly Sword DEFAULT_WEAPON = new Sword();
+        public Assassin() : this(Consts.Assassin.NAME, Consts.Assassin.LEVEL) { }
 
-        private LightLeatherVest bodyArmor;
-        private Sword weapon;
-
-        public LightLeatherVest BodyArmor
-        {
-            get
-            {
-                return this.bodyArmor;
-            }
-            set
-            {
-                this.bodyArmor = value;
-            }
-        }
-        public Sword Weapon
-        {
-            get
-            {
-                return this.weapon;
-            }
-            set
-            {
-                this.weapon = value;
-            }
-        }
-        public Assassin():this(DEFAULT_NAME, DEFAULT_LEVEL) { }
-
-        public Assassin(string name, int level) : this(name, level, DEFAULT_HEALTHPOINTS) { }
+        public Assassin(string name, int level) : this(name, level, Consts.Assassin.HEALTHPOINTS) { }
 
         public Assassin(string name, int level, int healthPoints)
         {
             base.Name = name;
             base.Level = level;
             base.HealthPoints = healthPoints;
-            base.Faction = DEFAULT_FACTION;
-            base.AbilityPoints = DEFAULT_ABILITY_POINTS;
-            this.Weapon = DEFAULT_WEAPON;
-            this.BodyArmor = DEFAULT_BODY_ARMOR;
+            base.Faction = Consts.Assassin.FACTION;
+            base.AbilityPoints = Consts.Assassin.ABILITY_POINTS;
+            base.Weapon = DEFAULT_WEAPON;
+            base.BodyArmor = DEFAULT_BODY_ARMOR;
+            base.IsAlive = true;
+            base.Scores = 0;
         }
 
-        public void Raze()
+        public int Raze()
+        {
+            return base.Weapon.DamagePoints + 10;
+        }
+
+        public int BleedToDeath()
         {
             throw new NotImplementedException();
         }
 
-        public void BleedToDeath()
+        public int Survival()
         {
-            throw new NotImplementedException();
+            return base.BodyArmor.ArmorPoints + 5;
         }
 
-        public void Survival()
+        public override int Attack()
         {
-            throw new NotImplementedException();
+            return this.Raze();
+        }
+
+        public override int SpecialAttack()
+        {
+            return this.BleedToDeath();
+        }
+
+        public override int Defend()
+        {
+            return this.Survival();
         }
     }
 }

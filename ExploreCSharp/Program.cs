@@ -321,7 +321,7 @@ namespace ExploreCSharp
         public static void ImplementInterfaceConcepts()
         {
             StaticClassExamples.ColorfulWriteLine("\n***********  Implement Interface Concepts***********\n", ConsoleColor.Yellow);
-            Pages.HandleInterfaces.AddTwoNumbers(5, 6);
+            Console.WriteLine($"The sum of 5 and 6 is {Pages.HandleInterfaces.AddTwoNumbers(5, 6)}");
         }
     }
 }

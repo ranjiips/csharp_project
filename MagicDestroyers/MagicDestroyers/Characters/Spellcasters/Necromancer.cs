@@ -11,69 +11,55 @@ using System.Threading.Tasks;
 
 namespace MagicDestroyers.Characters.Spellcasters
 {
-    public class Necromancer:Spellcasters
+    public class Necromancer : Spellcasters
     {
-        private const string DEFAULT_NAME = "Necromancer1";
-        private const int DEFAULT_LEVEL = 9;
-        private const int DEFAULT_HEALTH_POINTS = 100;
-        private const int DEFAULT_MANA_POINTS = 100;
-        private const Faction DEFAULT_FACTION = Faction.Spellcaster;
         private readonly LightLeatherVest DEFAULT_BODY_ARMOR = new LightLeatherVest();
-        private readonly Sword DEFAULT_WEAPON  = new Sword();
+        private readonly Sword DEFAULT_WEAPON = new Sword();
+        public Necromancer() : this(Consts.Neromancer.NAME, Consts.Neromancer.LEVEL) { }
 
-        private LightLeatherVest bodyArmor;
-        private Sword weapon;
-        
-        public LightLeatherVest BodyArmor
-        {
-            get
-            {
-                return this.bodyArmor;
-            }
-            set
-            {
-                this.bodyArmor = value;
-            }
-        }
-        public Sword Weapon
-        {
-            get
-            {
-                return this.weapon;
-            }
-            set
-            {
-                this.weapon = value;
-            }
-        }
-        public Necromancer():this(DEFAULT_NAME,DEFAULT_LEVEL) { }
-
-        public Necromancer(string name, int level):this(name, level, DEFAULT_HEALTH_POINTS) { }
+        public Necromancer(string name, int level) : this(name, level, Consts.Neromancer.HEALTH_POINTS) { }
 
         public Necromancer(string name, int level, int healthPoints)
         {
             base.Name = name;
             base.Level = level;
             base.HealthPoints = healthPoints;
-            base.Faction = DEFAULT_FACTION;
-            base.ManaPoints = DEFAULT_MANA_POINTS;
-            this.Weapon = DEFAULT_WEAPON;
-            this.BodyArmor = DEFAULT_BODY_ARMOR;
+            base.Faction = Consts.Neromancer.FACTION;
+            base.ManaPoints = Consts.Neromancer.MANA_POINTS;
+            base.Weapon = DEFAULT_WEAPON;
+            base.BodyArmor = DEFAULT_BODY_ARMOR;
+            base.IsAlive = true;
+            base.Scores = 0;
         }
 
-        public void ShadowRage()
+        public int ShadowRage()
+        {
+            return base.Weapon.DamagePoints + 10;
+        }
+
+        public int VampireTouch()
         {
             throw new NotImplementedException();
         }
 
-        public void VampireTouch()
+        public int BoneShield()
         {
-            throw new NotImplementedException();
+            return base.BodyArmor.ArmorPoints + 5;
         }
 
-        public void BoneShield()
+        public override int Attack()
         {
-            throw new NotImplementedException();
+            return this.ShadowRage();
+        }
+
+        public override int SpecialAttack()
+        {
+            return this.VampireTouch();
+        }
+
+        public override int Defend()
+        {
+            return this.BoneShield();
         }
     }
 }

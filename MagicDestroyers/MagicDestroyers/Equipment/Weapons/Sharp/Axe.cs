@@ -6,16 +6,21 @@ using System.Threading.Tasks;
 
 namespace MagicDestroyers.Equipment.Weapons.Sharp
 {
-    public class Axe:Weapons
+    public class Axe:Sharp
     {
-        private const int DEFAULT_DAMAGE = 10;
-        public Axe() : this(DEFAULT_DAMAGE)
+        private const int DEFAULT_DAMAGE_POINTS = 10;
+        public Axe() : this(DEFAULT_DAMAGE_POINTS)
         {
 
         }
-        public Axe(int damagePoints)
+        public Axe(int armorPoints)
         {
-            this.Damage = damagePoints;
+            this.DamagePoints = armorPoints;
+        }
+
+        public override void SpecialAbility()
+        {
+            this.HackNSlash();
         }
 
         public void HackNSlash()

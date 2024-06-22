@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MagicDestroyers.Equipment.Armors.Heavy
 {
-    public class Heavy:Armors
+    public abstract class Heavy:Armor
     {
     }
 }
