@@ -94,12 +94,19 @@ namespace CsharpConsole
             Console.WriteLine($"Matching Pattern: {result}");
         }
 
-        public void GetStringPattern()
+        public void GetStringPattern(string pattern)
         {
-            string[] words = { "floor", "flow", "flower", "flaws", "float" };
-            var match = words.Where(e => e.StartsWith("")).Select(e => e).ToList();
-
-
+            Console.WriteLine("***************************************************");
+            string[] words = { "floor", "flame", "flower", "flaws", "float" };
+            var match = words.Where(e => e.StartsWith(pattern)).Select(e => e).ToList();
+            var aa = "";
+            int count = match.Count();
+            Console.WriteLine($"Pattern Count: {count}");
+            foreach (var val in match)
+            {
+                Console.WriteLine(val);
+            }
+            Console.WriteLine("***************************************************");
         }
 
     }
