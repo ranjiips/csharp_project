@@ -14,7 +14,7 @@ namespace ExploreCSharp
         public int Price;
     }
 
-    class StudentMarks
+    public class StudentMarks
     {
         public int StudentID { get; set; }
         public string StudentName { get; set; }
@@ -31,7 +31,7 @@ namespace ExploreCSharp
         public string Title { get; set; }
         public int Price { get; set; }
     }
-    class ExploreLinq
+    public class ExploreLinq
     {
         List<Product> productdetails = new List<Product>
         {

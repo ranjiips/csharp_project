@@ -5,12 +5,13 @@ namespace NUnitProject
         [SetUp]
         public void Setup()
         {
+            Console.WriteLine("Setup part");
         }
 
         [Test]
         public void Test1()
         {
-            Assert.Pass();
+            Console.WriteLine("Setup part");
         }
     }
 }

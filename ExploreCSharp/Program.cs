@@ -25,12 +25,12 @@ namespace ExploreCSharp
             //sumfunc();
             //GenericCollectionConcepts();
             //ImplementExtensionMethods();
-            //ImplementRestAPIMethods();
-            //ImplementJsonConcepts();
+            ImplementRestAPIMethods();
+            ImplementJsonConcepts();
             //ImplementSeleniumConcepts();
             //ImplementEnumerationConcepts();
             //CountTheCharacters("abcdabcdpqr");
-            ImplementInterfaceConcepts();
+            //ImplementInterfaceConcepts();
         }
 
         public static void sumfunc()
@@ -54,27 +54,26 @@ namespace ExploreCSharp
             //LINQ Class
             string message = $"\n***********  Implement Linq Concepts***********\n";
             StaticClassExamples.ColorfulWriteLine(message, ConsoleColor.Cyan);
-            //Console.WriteLine("\n***********  Implement Linq Concepts***********\n");
-            ExploreLinq linq = new ExploreLinq();
-            linq.FindMobilePriceFromList(3);
-            linq.FindMobilePriceFromArrayList(8);
-            linq.IsTwoListSequenceEqual();
+            //Console.WriteLine("\n***********  Implement Linq Concepts***********\n");            
+            Pages.ExploreLinq.FindMobilePriceFromList(3);
+            Pages.ExploreLinq.FindMobilePriceFromArrayList(8);
+            Pages.ExploreLinq.IsTwoListSequenceEqual();
 
             int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            linq.GetEvenAndOddNumbersFromList(numbers);
+            Pages.ExploreLinq.GetEvenAndOddNumbersFromList(numbers);
 
-            linq.QueryTheProductDetails(30000);
-            linq.QueryTheStudentRecord(7);
-            linq.QueryTheStudentRecord(7, 80);
-            linq.LinQExpressionExamples();
+            Pages.ExploreLinq.QueryTheProductDetails(30000);
+            Pages.ExploreLinq.QueryTheStudentRecord(7);
+            Pages.ExploreLinq.QueryTheStudentRecord(7, 80);
+            Pages.ExploreLinq.LinQExpressionExamples();
 
-            linq.SortTheStuduentRecords();
-            linq.RemoveDuplicatesFromStringArrayUsingLinq();
+            Pages.ExploreLinq.SortTheStuduentRecords();
+            Pages.ExploreLinq.RemoveDuplicatesFromStringArrayUsingLinq();
 
             //Console.WriteLine("\n***********  Implement LambdaExpressions Concepts***********\n");
             string msg = "\n***********  Implement LambdaExpressions Concepts***********\n";
             StaticClassExamples.ColorfulWriteLine(msg, ConsoleColor.Yellow);
-            linq.SampleLambdaExpressions(5);
+            Pages.ExploreLinq.SampleLambdaExpressions(5);
         }
 
         public static void ImplementCSVFileHandlingConcepts()
@@ -82,29 +81,26 @@ namespace ExploreCSharp
             //File Handling Class
             StaticClassExamples.ColorfulWriteLine("\n***********  Implement CSV File Handling Concepts***********\n",ConsoleColor.Green);
             string filePath = "C:/Ranjith/Learnings/Projects/itemdetails.csv";
-            FileHandlingCSV csvfile = new FileHandlingCSV();
-            //csvfile.WriteContentIntoCSV(filePath);
-            csvfile.ReadContentFromCSV(filePath);
-            csvfile.ReadCSVContentLineByLine(filePath);
+            Pages.FileHandlingCSV.ReadContentFromCSV(filePath);
+            Pages.FileHandlingCSV.ReadCSVContentLineByLine(filePath);
             //csvfile.ReadCSVContentLineByLine(filePath, "Car");
-            csvfile.ReadCSVContentLineByLine(filePath, "Bus");
+            Pages.FileHandlingCSV.ReadCSVContentLineByLine(filePath, "Bus");
         }
 
         public static void ImplementExcelFileHandlingConcepts()
         {
             //File Handling Class
             StaticClassExamples.ColorfulWriteLine("\n***********  Implement Excel File Handling Concepts***********\n",ConsoleColor.Red);
-            string filePath = "C:/Ranjith/Learnings/Projects/itemdetails.xlsx";
-            FileHandlingExcel excelfile = new FileHandlingExcel(filePath,1);
-            Console.WriteLine($"Excel content: {excelfile.ReadCell(0, 0)}");
-            excelfile.WriteGivenCell("B10","SampleText");
-            excelfile.ReadGivenCell("B10");
+            //string filePath = "C:/Ranjith/Learnings/Projects/itemdetails.xlsx";
+            Console.WriteLine($"Excel content: {Pages.FileHandlingExcel.ReadCell(0, 0)}");
+            Pages.FileHandlingExcel.WriteGivenCell("B10","SampleText");
+            Pages.FileHandlingExcel.ReadGivenCell("B10");
             Console.WriteLine("-------------------------------------------------\n");
-            excelfile.WriteGivenCellRange("B2:B6", "SampleText");
-            excelfile.ReadCellRange();
+            Pages.FileHandlingExcel.WriteGivenCellRange("B2:B6", "SampleText");
+            Pages.FileHandlingExcel.ReadCellRange();
             Console.WriteLine("-------------------------------------------------\n");
-            excelfile.WriteMulitpleCells();
-            excelfile.ReadCellRange();
+            Pages.FileHandlingExcel.WriteMulitpleCells();
+            Pages.FileHandlingExcel.ReadCellRange();
             //excelfile.SaveWorkboox();
         }
 
@@ -112,13 +108,12 @@ namespace ExploreCSharp
         {
             //Sample Programs in C#
             StaticClassExamples.ColorfulWriteLine("\n***********  Implement Sample Programs for Practice***********\n", ConsoleColor.DarkCyan);
-            SamplePrograms sp = new SamplePrograms();
-            sp.FibonacciSeries(10);
-            sp.CovertFirstCharacterCase("upper case");
-            sp.CovertFirstCharacterCase("Lower case");
+            Pages.SamplePrograms.FibonacciSeries(10);
+            Pages.SamplePrograms.CovertFirstCharacterCase("upper case");
+            Pages.SamplePrograms.CovertFirstCharacterCase("Lower case");
 
             int n = 7;
-            Console.WriteLine("Fast Fibonacci({0}) = {1}", n, sp.FastFibonacci(n));
+            Console.WriteLine("Fast Fibonacci({0}) = {1}", n, Pages.SamplePrograms.FastFibonacci(n));
         }
 
         public static void ImplementEmployeeClass()
@@ -137,9 +132,9 @@ namespace ExploreCSharp
 
         public static void ImplementBankClass()
         {
-            StaticClassExamples.ColorfulWriteLine("\n***********  Implement Account class Concepts***********\n", ConsoleColor.White);
+            StaticClassExamples.ColorfulWriteLine("\n***********  Implement Bank Account class Concepts***********\n", ConsoleColor.White);
             //Account class implementation
-            Account accObj = new Account();
+            BankClass accObj = new BankClass();
             accObj.Name = "Ranjith";
             accObj.AccountNumber = "AA0943567982";
             accObj.CurrentBalance = 23500;
@@ -151,10 +146,9 @@ namespace ExploreCSharp
         public static void MethodOverloadingConcepts()
         {
             StaticClassExamples.ColorfulWriteLine("\n***********  Implement Method Overloading Concepts***********\n", ConsoleColor.Yellow);
-            Polymorphism py = new Polymorphism();
-            Console.WriteLine($"Add two integers (5,6) is {py.Add(5, 6)}");
-            Console.WriteLine($"Add two double values (5.5,8.6) is {py.Add(5.5, 8.6)}");
-            Console.WriteLine($"Concatenate two strings (Ranjith, Kumar) is {py.Add("Ranjith", "Kumar")}");
+            Console.WriteLine($"Add two integers (5,6) is {Pages.Polymorphism.Add(5, 6)}");
+            Console.WriteLine($"Add two double values (5.5,8.6) is {Pages.Polymorphism.Add(5.5, 8.6)}");
+            Console.WriteLine($"Concatenate two strings (Ranjith, Kumar) is {Pages.Polymorphism.Add("Ranjith", "Kumar")}");
         }
 
         public static void MethodOverRidingConcepts()
@@ -176,11 +170,10 @@ namespace ExploreCSharp
         {
             StaticClassExamples.ColorfulWriteLine("\n***********  Implement Encapsulation Concepts***********\n", ConsoleColor.Magenta);
 
-            Encapsulation encObj = new Encapsulation("Chennai");
-            encObj.Name = "Ranjith";
-            encObj.Birthdate = new DateTime(1985, 02, 10);
-            encObj.Country = "India";
-            encObj.DisplayDetails();
+            Pages.Encapsulation.Name = "Ranjith";
+            Pages.Encapsulation.Birthdate = new DateTime(1985, 02, 10);
+            Pages.Encapsulation.Country = "India";
+            Pages.Encapsulation.DisplayDetails();
         }
         public static void Boxing_Unboxing(int i)
         {
@@ -195,34 +188,31 @@ namespace ExploreCSharp
         {
             StaticClassExamples.ColorfulWriteLine("\n***********  Implement Basic String Operations Concepts***********\n", ConsoleColor.DarkCyan);
 
-            StringOperations strObj = new StringOperations();
             string str1 = "Ranjith";
             string str2 = "Kumar";
             string str3 = " This is the sample line to perform the string operations ";
 
-            strObj.ConcatenateStrings(str1, str2);
-            strObj.StringBuilderExamples(str1, str2);
-            strObj.ReplaceGivenValueInString(str3, "i", "ZZ");
-            Console.WriteLine($"Is the string '{str3}' contains 'o': {strObj.IsStringContains(str3, "o")}");
-            strObj.TrimSpaces(str3);
+            Pages.StringOperations.ConcatenateStrings(str1, str2);
+            Pages.StringOperations.StringBuilderExamples(str1, str2);
+            Pages.StringOperations.ReplaceGivenValueInString(str3, "i", "ZZ");
+            Console.WriteLine($"Is the string '{str3}' contains 'o': {Pages.StringOperations.IsStringContains(str3, "o")}");
+            Pages.StringOperations.TrimSpaces(str3);
         }
 
         public static void GenericCollectionConcepts()
         {
             StaticClassExamples.ColorfulWriteLine("\n***********  Implement Generics and Collection Concepts***********\n", ConsoleColor.DarkYellow);
-            GenericCollections gc = new GenericCollections();
-            gc.UsingList();
-            gc.UsingDictionary();
-            gc.UsingStack();
-            gc.UsingQueue();
-            gc.RemoveDuplicatesFromStringArrayList();
+            Pages.GenericCollections.UsingList();
+            Pages.GenericCollections.UsingDictionary();
+            Pages.GenericCollections.UsingStack();
+            Pages.GenericCollections.UsingQueue();
+            Pages.GenericCollections.RemoveDuplicatesFromStringArrayList();
         }
         public static void ImplementExtensionMethods()
         {
             StaticClassExamples.ColorfulWriteLine("\n***********  Implement Extension Method Concepts***********\n", ConsoleColor.DarkBlue);
-            StringOperations strObj = new StringOperations();
             string post = "I am trying to implement the string extension method concepts by extending the String class";
-            strObj.ImplementExtensionMethodConcepts(post);
+            Pages.StringOperations.ImplementExtensionMethodConcepts(post);
 
             IEnumerable<int> numbers = new List<int>() { 1,22,53,14,75,60,47};
             var max = numbers.Max();
@@ -233,20 +223,24 @@ namespace ExploreCSharp
         public static void ImplementRestAPIMethods()
         {
             StaticClassExamples.ColorfulWriteLine("\n***********  Implement Rest API Methods***********\n", ConsoleColor.Yellow);
-            string apiurl = "https://rahulshettyacademy.com";
+            //string apiurl = "https://rahulshettyacademy.com";
             string getbookapiurl = "/Library/GetBook.php";
             string queryParam = $"{getbookapiurl}?ID=AABD445";
-            HandleAPIs apiObj = new HandleAPIs(apiurl);
-            apiObj.DeleteBookAPI("/Library/DeleteBook.php", "AABD445");
-            apiObj.PostRequestAPI("/Library/Addbook.php");
-            apiObj.GetRequestAPI(queryParam);
+            //HandleAPIs apiObj = new HandleAPIs();
+            Pages.HandleAPIs.DeleteBookAPI("/Library/DeleteBook.php", "AABD445");
+            Pages.HandleAPIs.PostRequestAPIWithOutAuth("/Library/Addbook.php");
+            Pages.HandleAPIs.GetRequestAPIWithOutAuth(queryParam);
+            //Pages.HandleAPIs.GetRequestAPIUsingAsyncMethod();
         }
 
         public static void ImplementJsonConcepts()
         {
-            StaticClassExamples.ColorfulWriteLine("\n***********  Implement Json Methods***********\n", ConsoleColor.White);
-            int jsonCount = Pages.FileHandlingJSON.GetValuesUsingIndex();
-            int jsonObjCount = Pages.FileHandlingJSON.GetValuesUsingValueMethod();
+            StaticClassExamples.ColorfulWriteLine("\n***********  Implement Json Methods***********\n", ConsoleColor.Magenta);
+            var SingleJsonObject = Pages.FileHandlingJSON.GetJsonObject();
+            StaticClassExamples.ColorfulWriteLine($"{SingleJsonObject} \n", ConsoleColor.Cyan);
+            int jsonCount = Pages.FileHandlingJSON.GetValuesUsingIndex(SingleJsonObject);
+            int jsonObjCount = Pages.FileHandlingJSON.GetValuesUsingValueMethod(SingleJsonObject);
+            Pages.FileHandlingJSON.GetValuesFromJsonJTokenParseMethod(SingleJsonObject);
         }
 
         public static void ImplementSeleniumConcepts()

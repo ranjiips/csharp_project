@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RestSharp;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -107,6 +108,13 @@ namespace CsharpConsole
                 Console.WriteLine(val);
             }
             Console.WriteLine("***************************************************");
+        }
+
+        public void GetTheOccuranceOfTheGivenStartingCharater()
+        {
+            List<string> name = new List<string> { "Bob", "Charlie", "Bob", "David", "Beckam", "Elsie"};
+            var nameList = from n in name where n.StartsWith("B") select n;
+            Console.WriteLine($"Count of Names begins with 'b' is {nameList.Count()}");
         }
 
     }

@@ -6,8 +6,10 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using Microsoft.Office.Interop.Excel;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Newtonsoft.Json.Schema;
 using RestSharp;
 
 
@@ -15,21 +17,34 @@ namespace ExploreCSharp
 {
     public class FileHandlingJSON
     {
-        string filepath = "C:/Ranjith/Learnings/Projects/csharp_project/ExploreCSharp/Resources/menu.json";
+        //string filepath = "C:/Ranjith/Learnings/Projects/csharp_project/ExploreCSharp/Resources/menu.json";
+        private string filepath = $"{Directory.GetCurrentDirectory()}/Resources/menu.json";
+        public string FilePath
+        {
+            get { return filepath; }
+            private set { filepath = value; }
+        }
+
         public string GetJsonObject()
         {
             string json = null;
-            using (StreamReader reader = new StreamReader(filepath))
+            using (StreamReader reader = new StreamReader(FilePath))
             {
                 json = reader.ReadToEnd();
             }
             return json;
         }
 
-        public int GetValuesUsingIndex()
+        public JsonSchema GetJsonSchema()
         {
-            Console.WriteLine("\n***********  Json Methods - Get Values Using Index ***********\n");
-            var SingleJsonObject = GetJsonObject();
+            var json =  JsonSchema.Parse(File.ReadAllText(FilePath));
+            return json;
+        }
+
+        public int GetValuesUsingIndex(string SingleJsonObject)
+        {
+            StaticClassExamples.ColorfulWriteLine("\n***********  Json Methods - Get Values Using Index ***********\n", ConsoleColor.Magenta);
+            //var SingleJsonObject = GetJsonObject();            
             var jsonObject = JObject.Parse(SingleJsonObject);
             var name = (string)jsonObject["name"];
             var make = (string)jsonObject["make"];
@@ -42,10 +57,10 @@ namespace ExploreCSharp
             return jsonObject.Count;
         }
 
-        public int GetValuesUsingValueMethod()
+        public int GetValuesUsingValueMethod(string SingleJsonObject)
         {
-            Console.WriteLine("\n***********  Json Methods - Get Values Using Value Method ***********\n");
-            var SingleJsonObject = GetJsonObject();
+            StaticClassExamples.ColorfulWriteLine("\n***********  Json Methods - Get Values Using Value Method ***********\n", ConsoleColor.Magenta);
+            //var SingleJsonObject = GetJsonObject();
             var jsonObject = JObject.Parse(SingleJsonObject);
             var name = jsonObject.Value<string>("name");
             var make = jsonObject.Value<string>("make");
@@ -59,5 +74,13 @@ namespace ExploreCSharp
             return jsonObject.Count;
         }
 
+        public void GetValuesFromJsonJTokenParseMethod(string SingleJsonObject)
+        {
+            StaticClassExamples.ColorfulWriteLine("\n***********  Json Methods - Get Values Using JToken Parse Method ***********\n", ConsoleColor.Magenta);
+            //var SingleJsonObject = GetJsonObject();
+            var make = JToken.Parse(SingleJsonObject).SelectToken("make").ToString();
+            var year = JToken.Parse(SingleJsonObject).SelectToken("year").ToString();
+            Console.WriteLine($"{make} {year}");
+        }
     }
 }

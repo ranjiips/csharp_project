@@ -30,4 +30,17 @@
     <PackageReference Include="System.Data.OleDb" Version="9.0.0-preview.4.24266.19" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Resources\addBook.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\menu.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="APIFunctions\" />
+  </ItemGroup>
+
 </Project>

@@ -166,6 +166,7 @@ namespace CsharpConsole
 
             str.GetPatternMatch();
             str.GetStringPattern("fla");
+            str.GetTheOccuranceOfTheGivenStartingCharater();
         }
 
         public static void Handle_API_Methods()
@@ -179,6 +180,13 @@ namespace CsharpConsole
         {
             HandleCollections obj = new HandleCollections();
             obj.ListManipulation();
+        }
+
+        public static void SampleClassImplementation()
+        {
+            SampleClass sc = new SampleClass(6,4);
+            sc.MulitpleTwoNumbers();
+            sc.AddTwoNumbers();
         }
 
     }

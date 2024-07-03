@@ -39,17 +39,20 @@ namespace CsharpConsole
             ////Collections
             //StaticMethods.HandleCollections();
 
-            LinqClass lq = new LinqClass();
-            lq.SortTheNumbers();
-            lq.GetMinimumValue();
-            lq.GetMaximumValue();
-            lq.GetListCount();
-            lq.GetEvenNumbersFromTheList();
-            lq.GetvalueFromNthPoistion(2);
-            lq.GetTheHighestNumberBasedOnGivenPosition(3);
-            lq.GetMobileByPrice(3000);
-            lq.SortMobileByPriceAndSAR();
-            lq.ReverseTheNumberList();
+            //LinqClass lq = new LinqClass();
+            //lq.SortTheNumbers();
+            //lq.GetMinimumValue();
+            //lq.GetMaximumValue();
+            //lq.GetListCount();
+            //lq.GetEvenNumbersFromTheList();
+            //lq.GetvalueFromNthPoistion(2);
+            //lq.GetTheHighestNumberBasedOnGivenPosition(3);
+            //lq.GetMobileByPrice(3000);
+            //lq.SortMobileByPriceAndSAR();
+            //lq.ReverseTheNumberList();
+
+            //Sample class implementation
+            StaticMethods.SampleClassImplementation();
         }        
     }
 }

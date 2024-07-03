@@ -10,6 +10,7 @@ using _Excel = Microsoft.Office.Interop.Excel;
 using System.Data.OleDb;
 using System.Data;
 using System.IO;
+using System.Runtime.CompilerServices;
 
 
 namespace ExploreCSharp
@@ -22,15 +23,22 @@ namespace ExploreCSharp
     //}
     public class FileHandlingExcel
     {
-        string path = "";
+        private string filePath = "C:/Ranjith/Learnings/Projects/itemdetails.xlsx";
+        private int sheet = 1;
+
         _Application excel = new _Excel.Application();        
         Workbook wb;
         Worksheet ws;
-        public FileHandlingExcel(string path, int sheet) 
+
+        public string FilePath { get; set; }
+        public int Sheet { get; set; }
+
+        public FileHandlingExcel() 
         {
-            this.path = path;
-            wb = excel.Workbooks.Open(path);
-            ws = wb.Worksheets[sheet];
+            this.FilePath = filePath;
+            this.Sheet = sheet;
+            wb = excel.Workbooks.Open(this.FilePath);
+            ws = wb.Worksheets[this.Sheet];
         }
 
         List<ItemDetails> items = new List<ItemDetails>()

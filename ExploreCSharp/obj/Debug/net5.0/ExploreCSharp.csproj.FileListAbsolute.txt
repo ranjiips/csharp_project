@@ -26,6 +26,8 @@ C:\Ranjith\Learnings\Projects\csharp_project\ExploreCSharp\bin\Debug\net5.0\nuni
 C:\Ranjith\Learnings\Projects\csharp_project\ExploreCSharp\bin\Debug\net5.0\nunit.engine.core.dll
 C:\Ranjith\Learnings\Projects\csharp_project\ExploreCSharp\bin\Debug\net5.0\testcentric.engine.metadata.dll
 C:\Ranjith\Learnings\Projects\csharp_project\ExploreCSharp\bin\Debug\net5.0\ExploreCSharp.exe
+C:\Ranjith\Learnings\Projects\csharp_project\ExploreCSharp\bin\Debug\net5.0\Resources\addBook.json
+C:\Ranjith\Learnings\Projects\csharp_project\ExploreCSharp\bin\Debug\net5.0\Resources\menu.json
 C:\Ranjith\Learnings\Projects\csharp_project\ExploreCSharp\bin\Debug\net5.0\ExploreCSharp.deps.json
 C:\Ranjith\Learnings\Projects\csharp_project\ExploreCSharp\bin\Debug\net5.0\ExploreCSharp.runtimeconfig.json
 C:\Ranjith\Learnings\Projects\csharp_project\ExploreCSharp\bin\Debug\net5.0\ExploreCSharp.runtimeconfig.dev.json

@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|c:\\ranjith\\learnings\\projects\\csharp_project\\magicdestroyers\\magicdestroyers\\characters\\melee\\warrior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|solutionrelative:magicdestroyers\\characters\\melee\\warrior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|c:\\ranjith\\learnings\\projects\\csharp_project\\magicdestroyers\\magicdestroyers\\characters\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|solutionrelative:magicdestroyers\\characters\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|c:\\ranjith\\learnings\\projects\\csharp_project\\magicdestroyers\\magicdestroyers\\characters\\melee\\melee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|solutionrelative:magicdestroyers\\characters\\melee\\melee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|c:\\ranjith\\learnings\\projects\\csharp_project\\magicdestroyers\\magicdestroyers\\characters\\interfaces\\idefend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|solutionrelative:magicdestroyers\\characters\\interfaces\\idefend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|c:\\ranjith\\learnings\\projects\\csharp_project\\magicdestroyers\\magicdestroyers\\characters\\interfaces\\iattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|solutionrelative:magicdestroyers\\characters\\interfaces\\iattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|c:\\ranjith\\learnings\\projects\\csharp_project\\magicdestroyers\\magicdestroyers\\entrypoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|solutionrelative:magicdestroyers\\entrypoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|c:\\ranjith\\learnings\\projects\\csharp_project\\magicdestroyers\\magicdestroyers\\characters\\melee\\knight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|solutionrelative:magicdestroyers\\characters\\melee\\knight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|c:\\ranjith\\learnings\\projects\\csharp_project\\magicdestroyers\\magicdestroyers\\characters\\melee\\melee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|solutionrelative:magicdestroyers\\characters\\melee\\melee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|c:\\ranjith\\learnings\\projects\\csharp_project\\magicdestroyers\\magicdestroyers\\characters\\spellcasters\\spellcasters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,14 +55,6 @@
       "RelativeMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|solutionrelative:magicdestroyers\\consts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|c:\\ranjith\\learnings\\projects\\csharp_project\\magicdestroyers\\magicdestroyers\\characters\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|solutionrelative:magicdestroyers\\characters\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|c:\\ranjith\\learnings\\projects\\csharp_project\\magicdestroyers\\magicdestroyers\\characters\\melee\\warrior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|solutionrelative:magicdestroyers\\characters\\melee\\warrior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|c:\\ranjith\\learnings\\projects\\csharp_project\\magicdestroyers\\magicdestroyers\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|solutionrelative:magicdestroyers\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -57,14 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|c:\\ranjith\\learnings\\projects\\csharp_project\\magicdestroyers\\magicdestroyers\\playersinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|solutionrelative:magicdestroyers\\playersinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|c:\\ranjith\\learnings\\projects\\csharp_project\\magicdestroyers\\magicdestroyers\\characters\\interfaces\\idefend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|solutionrelative:magicdestroyers\\characters\\interfaces\\idefend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|c:\\ranjith\\learnings\\projects\\csharp_project\\magicdestroyers\\magicdestroyers\\characters\\interfaces\\iattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|solutionrelative:magicdestroyers\\characters\\interfaces\\iattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F37C8D6-E9EF-4E70-A240-4E3270EFB497}|MagicDestroyers\\MagicDestroyers.csproj|c:\\ranjith\\learnings\\projects\\csharp_project\\magicdestroyers\\magicdestroyers\\equipment\\weapons\\blunt\\blunt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -134,17 +134,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "EntryPoint.cs",
               "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\EntryPoint.cs",
               "RelativeDocumentMoniker": "MagicDestroyers\\EntryPoint.cs",
               "ToolTip": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\EntryPoint.cs",
               "RelativeToolTip": "MagicDestroyers\\EntryPoint.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-18T05:37:15.676Z",
               "IsPinned": true,
@@ -152,46 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Knight.cs",
-              "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Melee\\Knight.cs",
-              "RelativeDocumentMoniker": "MagicDestroyers\\Characters\\Melee\\Knight.cs",
-              "ToolTip": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Melee\\Knight.cs",
-              "RelativeToolTip": "MagicDestroyers\\Characters\\Melee\\Knight.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAcwB8AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T09:03:42.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Druid.cs",
-              "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Spellcasters\\Druid.cs",
-              "RelativeDocumentMoniker": "MagicDestroyers\\Characters\\Spellcasters\\Druid.cs",
-              "ToolTip": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Spellcasters\\Druid.cs",
-              "RelativeToolTip": "MagicDestroyers\\Characters\\Spellcasters\\Druid.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAYwB8AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T09:04:03.516Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Assassin.cs",
-              "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Melee\\Assassin.cs",
-              "RelativeDocumentMoniker": "MagicDestroyers\\Characters\\Melee\\Assassin.cs",
-              "ToolTip": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Melee\\Assassin.cs",
-              "RelativeToolTip": "MagicDestroyers\\Characters\\Melee\\Assassin.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAmwD4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T09:03:56.034Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Necromancer.cs",
               "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Spellcasters\\Necromancer.cs",
               "RelativeDocumentMoniker": "MagicDestroyers\\Characters\\Spellcasters\\Necromancer.cs",
@@ -199,12 +160,11 @@
               "RelativeToolTip": "MagicDestroyers\\Characters\\Spellcasters\\Necromancer.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAA2wB8AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T09:04:54.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-18T09:04:54.348Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Mage.cs",
               "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Spellcasters\\Mage.cs",
               "RelativeDocumentMoniker": "MagicDestroyers\\Characters\\Spellcasters\\Mage.cs",
@@ -212,12 +172,11 @@
               "RelativeToolTip": "MagicDestroyers\\Characters\\Spellcasters\\Mage.cs",
               "ViewState": "AQIAADYAAAAAAAAAAADwv1EAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T09:04:48.3Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-18T09:04:48.3Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Spellcasters.cs",
               "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Spellcasters\\Spellcasters.cs",
               "RelativeDocumentMoniker": "MagicDestroyers\\Characters\\Spellcasters\\Spellcasters.cs",
@@ -225,25 +184,24 @@
               "RelativeToolTip": "MagicDestroyers\\Characters\\Spellcasters\\Spellcasters.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T03:23:58.586Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T03:23:58.586Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Melee.cs",
               "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Melee\\Melee.cs",
               "RelativeDocumentMoniker": "MagicDestroyers\\Characters\\Melee\\Melee.cs",
               "ToolTip": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Melee\\Melee.cs",
               "RelativeToolTip": "MagicDestroyers\\Characters\\Melee\\Melee.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAA7wBYAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T03:23:43.805Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Consts.cs",
               "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Consts.cs",
               "RelativeDocumentMoniker": "MagicDestroyers\\Consts.cs",
@@ -251,38 +209,49 @@
               "RelativeToolTip": "MagicDestroyers\\Consts.cs",
               "ViewState": "AQIAAC8AAAAAAAAAAADgvzUAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T16:15:45.003Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T16:15:45.003Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "Character.cs",
               "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Character.cs",
               "RelativeDocumentMoniker": "MagicDestroyers\\Characters\\Character.cs",
               "ToolTip": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Character.cs",
               "RelativeToolTip": "MagicDestroyers\\Characters\\Character.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAnwD0AAAB8AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T03:23:08.581Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "Warrior.cs",
               "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Melee\\Warrior.cs",
               "RelativeDocumentMoniker": "MagicDestroyers\\Characters\\Melee\\Warrior.cs",
               "ToolTip": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Melee\\Warrior.cs",
               "RelativeToolTip": "MagicDestroyers\\Characters\\Melee\\Warrior.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAADoAAAAIAAAA",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAwwDcAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-18T08:13:27.26Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
+              "Title": "Assassin.cs",
+              "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Melee\\Assassin.cs",
+              "RelativeDocumentMoniker": "MagicDestroyers\\Characters\\Melee\\Assassin.cs",
+              "ToolTip": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Melee\\Assassin.cs",
+              "RelativeToolTip": "MagicDestroyers\\Characters\\Melee\\Assassin.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAmwD4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T09:03:56.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Tools.cs",
               "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Tools.cs",
               "RelativeDocumentMoniker": "MagicDestroyers\\Tools.cs",
@@ -290,12 +259,11 @@
               "RelativeToolTip": "MagicDestroyers\\Tools.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAAAswDEAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T16:31:41.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T16:31:41.36Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "PlayersInfo.cs",
               "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\PlayersInfo.cs",
               "RelativeDocumentMoniker": "MagicDestroyers\\PlayersInfo.cs",
@@ -303,12 +271,11 @@
               "RelativeToolTip": "MagicDestroyers\\PlayersInfo.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAjwD8AAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T02:10:52.305Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T02:10:52.305Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Weapon.cs",
               "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Equipment\\Weapons\\Weapon.cs",
               "RelativeDocumentMoniker": "MagicDestroyers\\Equipment\\Weapons\\Weapon.cs",
@@ -316,34 +283,57 @@
               "RelativeToolTip": "MagicDestroyers\\Equipment\\Weapons\\Weapon.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T08:55:15.523Z",
+              "WhenOpened": "2024-06-21T08:55:15.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IAttack.cs",
+              "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Interfaces\\IAttack.cs",
+              "RelativeDocumentMoniker": "MagicDestroyers\\Characters\\Interfaces\\IAttack.cs",
+              "ToolTip": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Interfaces\\IAttack.cs",
+              "RelativeToolTip": "MagicDestroyers\\Characters\\Interfaces\\IAttack.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T07:29:57.559Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 3,
               "Title": "IDefend.cs",
               "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Interfaces\\IDefend.cs",
               "RelativeDocumentMoniker": "MagicDestroyers\\Characters\\Interfaces\\IDefend.cs",
               "ToolTip": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Interfaces\\IDefend.cs",
               "RelativeToolTip": "MagicDestroyers\\Characters\\Interfaces\\IDefend.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAALAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-20T07:30:25.408Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IAttack.cs",
-              "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Interfaces\\IAttack.cs",
-              "RelativeDocumentMoniker": "MagicDestroyers\\Characters\\Interfaces\\IAttack.cs",
-              "ToolTip": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Interfaces\\IAttack.cs",
-              "RelativeToolTip": "MagicDestroyers\\Characters\\Interfaces\\IAttack.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAVAAAA",
+              "DocumentIndex": 11,
+              "Title": "Druid.cs",
+              "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Spellcasters\\Druid.cs",
+              "RelativeDocumentMoniker": "MagicDestroyers\\Characters\\Spellcasters\\Druid.cs",
+              "ToolTip": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Spellcasters\\Druid.cs",
+              "RelativeToolTip": "MagicDestroyers\\Characters\\Spellcasters\\Druid.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwB8AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T07:29:57.559Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-18T09:04:03.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Knight.cs",
+              "DocumentMoniker": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Melee\\Knight.cs",
+              "RelativeDocumentMoniker": "MagicDestroyers\\Characters\\Melee\\Knight.cs",
+              "ToolTip": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\MagicDestroyers\\MagicDestroyers\\Characters\\Melee\\Knight.cs",
+              "RelativeToolTip": "MagicDestroyers\\Characters\\Melee\\Knight.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAcwB8AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T09:03:42.337Z"
             },
             {
               "$type": "Document",
@@ -355,8 +345,7 @@
               "RelativeToolTip": "MagicDestroyers\\Equipment\\Weapons\\Blunt\\Blunt.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T05:43:01.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T05:43:01.069Z"
             },
             {
               "$type": "Document",
@@ -368,8 +357,7 @@
               "RelativeToolTip": "MagicDestroyers\\Equipment\\Weapons\\Blunt\\Hammer.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAADwvxwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T08:54:37.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-18T08:54:37.513Z"
             },
             {
               "$type": "Document",
@@ -381,8 +369,7 @@
               "RelativeToolTip": "MagicDestroyers\\Equipment\\Weapons\\Blunt\\Staff.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T08:54:43.197Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-18T08:54:43.197Z"
             },
             {
               "$type": "Document",
@@ -394,8 +381,7 @@
               "RelativeToolTip": "MagicDestroyers\\Equipment\\Weapons\\Sharp\\Axe.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAADwvw8AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T08:54:47.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-18T08:54:47.106Z"
             },
             {
               "$type": "Document",
@@ -407,8 +393,7 @@
               "RelativeToolTip": "MagicDestroyers\\Equipment\\Weapons\\Sharp\\Sharp.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T05:43:11.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T05:43:11.142Z"
             },
             {
               "$type": "Document",
@@ -420,8 +405,7 @@
               "RelativeToolTip": "MagicDestroyers\\Equipment\\Weapons\\Sharp\\Sword.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAQwBsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T08:54:51.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-18T08:54:51.17Z"
             },
             {
               "$type": "Document",
@@ -433,8 +417,7 @@
               "RelativeToolTip": "MagicDestroyers\\Equipment\\Armors\\Armor.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T05:41:43.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T05:41:43.204Z"
             },
             {
               "$type": "Document",
@@ -446,8 +429,7 @@
               "RelativeToolTip": "MagicDestroyers\\Equipment\\Armors\\Light\\Light.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T05:42:27.841Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T05:42:27.841Z"
             },
             {
               "$type": "Document",
@@ -459,8 +441,7 @@
               "RelativeToolTip": "MagicDestroyers\\Equipment\\Armors\\Leather\\Leather.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T05:42:18.001Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T05:42:18.001Z"
             },
             {
               "$type": "Document",
@@ -472,8 +453,7 @@
               "RelativeToolTip": "MagicDestroyers\\Equipment\\Armors\\Heavy\\Heavy.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T05:42:08.444Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T05:42:08.444Z"
             },
             {
               "$type": "Document",
@@ -485,8 +465,7 @@
               "RelativeToolTip": "MagicDestroyers\\Equipment\\Equipment.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T05:41:22.585Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T05:41:22.585Z"
             },
             {
               "$type": "Document",
@@ -498,8 +477,7 @@
               "RelativeToolTip": "MagicDestroyers\\Equipment\\Armors\\Light\\ClothRobe.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T08:55:01.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-18T08:55:01.77Z"
             },
             {
               "$type": "Document",
@@ -511,8 +489,7 @@
               "RelativeToolTip": "MagicDestroyers\\Equipment\\Armors\\Leather\\LightLeatherVest.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T09:08:28.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-18T09:08:28.234Z"
             },
             {
               "$type": "Document",
@@ -524,8 +501,7 @@
               "RelativeToolTip": "MagicDestroyers\\Equipment\\Armors\\Heavy\\Chainlink.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T09:07:25.8Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-18T09:07:25.8Z"
             },
             {
               "$type": "Document",
