@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Ranjith\\Learnings\\C#\\ClassLibrary1\\AccessModifiersClasses.csproj": {}
+    "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\ClassLibrary1\\AccessModifiersClasses.csproj": {}
   },
   "projects": {
-    "C:\\Ranjith\\Learnings\\C#\\ClassLibrary1\\AccessModifiersClasses.csproj": {
+    "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\ClassLibrary1\\AccessModifiersClasses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Ranjith\\Learnings\\C#\\ClassLibrary1\\AccessModifiersClasses.csproj",
+        "projectUniqueName": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\ClassLibrary1\\AccessModifiersClasses.csproj",
         "projectName": "AccessModifiersClasses",
-        "projectPath": "C:\\Ranjith\\Learnings\\C#\\ClassLibrary1\\AccessModifiersClasses.csproj",
+        "projectPath": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\ClassLibrary1\\AccessModifiersClasses.csproj",
         "packagesPath": "C:\\Users\\sranjith\\.nuget\\packages\\",
-        "outputPath": "C:\\Ranjith\\Learnings\\C#\\ClassLibrary1\\obj\\",
+        "outputPath": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sranjith\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -45,7 +50,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -54,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

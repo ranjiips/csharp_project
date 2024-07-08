@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ExploreCSharp
 {
 
-    public class Account
+    public class BankClass
     {
         private string name;
         private string accountNumber;
@@ -28,11 +28,11 @@ namespace ExploreCSharp
             set { balance = value; }
         }
     }
-    interface IAccount { double CalculateInterest(Account account); }
+    interface IAccount { double CalculateInterest(BankClass account); }
 
     public class SavingsAccount:IAccount
     {
-        public double CalculateInterest(Account account)
+        public double CalculateInterest(BankClass account)
         {
             return account.CurrentBalance * 0.4;
         }
@@ -40,7 +40,7 @@ namespace ExploreCSharp
 
     public class CurrentAccount:IAccount
     {
-        public double CalculateInterest(Account account)
+        public double CalculateInterest(BankClass account)
         {
             return account.CurrentBalance * 5.2;
         }
@@ -48,12 +48,9 @@ namespace ExploreCSharp
 
     public class BusinessAccount:IAccount
     {
-        public double CalculateInterest(Account acc)
+        public double CalculateInterest(BankClass acc)
         {
             return acc.CurrentBalance * 5.8;
         }
-    }
-    public class BankClass
-    {
     }
 }

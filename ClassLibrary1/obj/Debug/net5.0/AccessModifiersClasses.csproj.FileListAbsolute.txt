@@ -10,3 +10,15 @@ C:\Ranjith\Learnings\C#\ClassLibrary1\obj\Debug\net5.0\AccessModifiersClasses.cs
 C:\Ranjith\Learnings\C#\ClassLibrary1\obj\Debug\net5.0\AccessModifiersClasses.dll
 C:\Ranjith\Learnings\C#\ClassLibrary1\obj\Debug\net5.0\ref\AccessModifiersClasses.dll
 C:\Ranjith\Learnings\C#\ClassLibrary1\obj\Debug\net5.0\AccessModifiersClasses.pdb
+C:\Ranjith\Learnings\Projects\csharp_project\ClassLibrary1\bin\Debug\net5.0\AccessModifiersClasses.deps.json
+C:\Ranjith\Learnings\Projects\csharp_project\ClassLibrary1\bin\Debug\net5.0\AccessModifiersClasses.dll
+C:\Ranjith\Learnings\Projects\csharp_project\ClassLibrary1\bin\Debug\net5.0\AccessModifiersClasses.pdb
+C:\Ranjith\Learnings\Projects\csharp_project\ClassLibrary1\obj\Debug\net5.0\AccessModifiersClasses.GeneratedMSBuildEditorConfig.editorconfig
+C:\Ranjith\Learnings\Projects\csharp_project\ClassLibrary1\obj\Debug\net5.0\AccessModifiersClasses.AssemblyInfoInputs.cache
+C:\Ranjith\Learnings\Projects\csharp_project\ClassLibrary1\obj\Debug\net5.0\AccessModifiersClasses.AssemblyInfo.cs
+C:\Ranjith\Learnings\Projects\csharp_project\ClassLibrary1\obj\Debug\net5.0\AccessModifiersClasses.csproj.CoreCompileInputs.cache
+C:\Ranjith\Learnings\Projects\csharp_project\ClassLibrary1\obj\Debug\net5.0\AccessModifiersClasses.sourcelink.json
+C:\Ranjith\Learnings\Projects\csharp_project\ClassLibrary1\obj\Debug\net5.0\AccessModifiersClasses.dll
+C:\Ranjith\Learnings\Projects\csharp_project\ClassLibrary1\obj\Debug\net5.0\refint\AccessModifiersClasses.dll
+C:\Ranjith\Learnings\Projects\csharp_project\ClassLibrary1\obj\Debug\net5.0\AccessModifiersClasses.pdb
+C:\Ranjith\Learnings\Projects\csharp_project\ClassLibrary1\obj\Debug\net5.0\ref\AccessModifiersClasses.dll

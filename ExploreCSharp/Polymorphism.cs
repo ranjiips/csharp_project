@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace ExploreCSharp
 {
-    class Polymorphism
+    public class Polymorphism
     {
         public int Add(int num1, int num2)
         {
             return num1 + num2;
         }
 
-        public double Add(double num1, double num2)
+        public static double Add(double num1, double num2)
         {
             return num1 + num2;
         }
 
         public string Add(string str1, string str2)
         {
-            return str1 + str2;
+            return str1 + str2;            
         }
     }
 
@@ -28,6 +28,7 @@ namespace ExploreCSharp
     {
         public virtual void Eating()
         {
+            
             Console.WriteLine("All the animals are eating");
         }
 

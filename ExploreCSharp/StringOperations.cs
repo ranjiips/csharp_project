@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExploreCSharp
 {
-    class StringOperations
+    public class StringOperations
     {
         public void ConcatenateStrings(string str1, string str2)
         {
@@ -40,8 +40,7 @@ namespace ExploreCSharp
         {
             var shortenedPost = post.Shorten(10);
             Console.WriteLine($"Actual Post: {post}");
-            Console.WriteLine($"Shortened Post: {shortenedPost}");
-            
+            Console.WriteLine($"Shortened Post: {shortenedPost}");            
         }
     }
 }

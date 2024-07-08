@@ -7,7 +7,7 @@ using System.Numerics;
 
 namespace ExploreCSharp
 {
-    class SamplePrograms
+    public class SamplePrograms
     {
         public void FibonacciSeries(int numrange)
         {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ExploreCSharp
 {
-    class GenericCollections
+    public class GenericCollections
     {
         class Products
         {

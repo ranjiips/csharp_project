@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace ExploreCSharp
 {
-    class Encapsulation
+    public class Encapsulation
     {
         private string _name;
         private int _age;
         private string _city;
         public string Country;
+        private string cityName = "Chennai";
         public DateTime Birthdate { get; set; }
+        public string CityName { get; set; }
 
-        public Encapsulation(string cityName)
+        public Encapsulation()
         {
             GetCity(cityName);
         }

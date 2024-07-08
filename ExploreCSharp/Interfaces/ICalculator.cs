@@ -3,8 +3,8 @@ namespace ExploreCSharp.Interfaces
 {
     public interface ICalculator
     {
-        int Number1 { get; set; }
-        int Number2 { get; set; }
-        int AddTwoNumbers(int number1, int number2);
+        abstract int Number1 { get; set; }
+        abstract int Number2 { get; set; }
+        abstract int AddTwoNumbers(int number1, int number2);
     }
 }
