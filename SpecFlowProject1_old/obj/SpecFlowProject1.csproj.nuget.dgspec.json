@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Ranjith\\Learnings\\C#\\SpecFlowProject1\\SpecFlowProject1.csproj": {}
+    "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\SpecFlowProject1_old\\SpecFlowProject1.csproj": {}
   },
   "projects": {
-    "C:\\Ranjith\\Learnings\\C#\\SpecFlowProject1\\SpecFlowProject1.csproj": {
+    "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\SpecFlowProject1_old\\SpecFlowProject1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Ranjith\\Learnings\\C#\\SpecFlowProject1\\SpecFlowProject1.csproj",
+        "projectUniqueName": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\SpecFlowProject1_old\\SpecFlowProject1.csproj",
         "projectName": "SpecFlowProject1",
-        "projectPath": "C:\\Ranjith\\Learnings\\C#\\SpecFlowProject1\\SpecFlowProject1.csproj",
+        "projectPath": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\SpecFlowProject1_old\\SpecFlowProject1.csproj",
         "packagesPath": "C:\\Users\\sranjith\\.nuget\\packages\\",
-        "outputPath": "C:\\Ranjith\\Learnings\\C#\\SpecFlowProject1\\obj\\",
+        "outputPath": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\SpecFlowProject1_old\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sranjith\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -85,7 +90,7 @@
               "version": "[3.9.7, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

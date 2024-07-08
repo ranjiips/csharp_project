@@ -5,10 +5,14 @@
       "BoDi/1.5.0": {
         "type": "package",
         "compile": {
-          "lib/net45/BoDi.dll": {}
+          "lib/net45/BoDi.dll": {
+            "related": ".pdb"
+          }
         },
         "runtime": {
-          "lib/net45/BoDi.dll": {}
+          "lib/net45/BoDi.dll": {
+            "related": ".pdb"
+          }
         },
         "build": {
           "build/_._": {}
@@ -46,28 +50,40 @@
           "System.Xml.Linq"
         ],
         "compile": {
-          "lib/net47/FluentAssertions.dll": {}
+          "lib/net47/FluentAssertions.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net47/FluentAssertions.dll": {}
+          "lib/net47/FluentAssertions.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Gherkin/19.0.3": {
         "type": "package",
         "compile": {
-          "lib/net45/Gherkin.dll": {}
+          "lib/net45/Gherkin.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net45/Gherkin.dll": {}
+          "lib/net45/Gherkin.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Google.Protobuf/3.7.0": {
         "type": "package",
         "compile": {
-          "lib/net45/Google.Protobuf.dll": {}
+          "lib/net45/Google.Protobuf.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net45/Google.Protobuf.dll": {}
+          "lib/net45/Google.Protobuf.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Microsoft.CodeCoverage/16.5.0": {
@@ -99,12 +115,20 @@
       "MSTest.TestFramework/2.2.7": {
         "type": "package",
         "compile": {
-          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll": {},
-          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {}
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll": {
+            "related": ".XML"
+          },
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {
+            "related": ".Extensions.XML;.XML"
+          }
         },
         "runtime": {
-          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll": {},
-          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {}
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll": {
+            "related": ".XML"
+          },
+          "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {
+            "related": ".Extensions.XML;.XML"
+          }
         }
       },
       "NUnit3TestAdapter/4.0.0": {
@@ -119,10 +143,14 @@
           "System.Web"
         ],
         "compile": {
-          "lib/net452/RestSharp.dll": {}
+          "lib/net452/RestSharp.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net452/RestSharp.dll": {}
+          "lib/net452/RestSharp.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Selenium.Support/3.141.0": {
@@ -134,10 +162,14 @@
           "System.Drawing"
         ],
         "compile": {
-          "lib/net45/WebDriver.Support.dll": {}
+          "lib/net45/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net45/WebDriver.Support.dll": {}
+          "lib/net45/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Selenium.WebDriver/3.141.0": {
@@ -146,10 +178,14 @@
           "System.Drawing"
         ],
         "compile": {
-          "lib/net45/WebDriver.dll": {}
+          "lib/net45/WebDriver.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net45/WebDriver.dll": {}
+          "lib/net45/WebDriver.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Selenium.WebDriver.ChromeDriver/94.0.4606.6100": {
@@ -168,10 +204,14 @@
           "System.ValueTuple": "4.4.0"
         },
         "compile": {
-          "lib/net461/TechTalk.SpecFlow.dll": {}
+          "lib/net461/TechTalk.SpecFlow.dll": {
+            "related": ".ExternalAnnotations.xml;.pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net461/TechTalk.SpecFlow.dll": {}
+          "lib/net461/TechTalk.SpecFlow.dll": {
+            "related": ".ExternalAnnotations.xml;.pdb;.xml"
+          }
         },
         "build": {
           "build/SpecFlow.targets": {}
@@ -270,10 +310,14 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net47/System.ValueTuple.dll": {}
+          "ref/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net47/System.ValueTuple.dll": {}
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
         }
       }
     }
@@ -1274,11 +1318,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Ranjith\\Learnings\\C#\\SpecFlowProject1\\SpecFlowProject1.csproj",
+      "projectUniqueName": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\SpecFlowProject1_old\\SpecFlowProject1.csproj",
       "projectName": "SpecFlowProject1",
-      "projectPath": "C:\\Ranjith\\Learnings\\C#\\SpecFlowProject1\\SpecFlowProject1.csproj",
+      "projectPath": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\SpecFlowProject1_old\\SpecFlowProject1.csproj",
       "packagesPath": "C:\\Users\\sranjith\\.nuget\\packages\\",
-      "outputPath": "C:\\Ranjith\\Learnings\\C#\\SpecFlowProject1\\obj\\",
+      "outputPath": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\SpecFlowProject1_old\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sranjith\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1301,6 +1345,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1352,7 +1401,7 @@
             "version": "[3.9.7, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
