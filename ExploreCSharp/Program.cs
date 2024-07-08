@@ -1,15 +1,20 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using AventStack.ExtentReports.Reporter;
 using ExploreCSharp.SeleniumWeb;
+using Microsoft.Office.Interop.Excel;
 
 namespace ExploreCSharp
 {
     class Program
     {
+        static AventStack.ExtentReports.ExtentReports extent;
         static void Main(string[] args)
         {
+            //ExtentReportsFunction();
             Console.WriteLine("Explore C Sharp");
             //ImplementLinqConcepts();
             //ImplementCSVFileHandlingConcepts();
@@ -25,12 +30,22 @@ namespace ExploreCSharp
             //sumfunc();
             //GenericCollectionConcepts();
             //ImplementExtensionMethods();
-            ImplementRestAPIMethods();
-            ImplementJsonConcepts();
-            //ImplementSeleniumConcepts();
+            //ImplementRestAPIMethods();
+            //ImplementJsonConcepts();
+            ////ImplementSeleniumConcepts();
             //ImplementEnumerationConcepts();
             //CountTheCharacters("abcdabcdpqr");
             //ImplementInterfaceConcepts();
+            SampleTestScenario();
+        }
+
+        public static void ExtentReportsFunction()
+        {
+            var reportFolderLocation = Environment.CurrentDirectory + @"\Reports";
+            Directory.CreateDirectory(reportFolderLocation);
+            ExtentHtmlReporter htmlreport = new ExtentHtmlReporter(reportFolderLocation);
+            extent = new AventStack.ExtentReports.ExtentReports();
+            extent.AttachReporter(htmlreport);
         }
 
         public static void sumfunc()
@@ -316,6 +331,22 @@ namespace ExploreCSharp
         {
             StaticClassExamples.ColorfulWriteLine("\n***********  Implement Interface Concepts***********\n", ConsoleColor.Yellow);
             Console.WriteLine($"The sum of 5 and 6 is {Pages.HandleInterfaces.AddTwoNumbers(5, 6)}");
+        }
+
+        public static void SampleTestScenario()
+        {
+            List<int> arr = new List<int> {0,0,-1,1,1};
+            int arrLength = arr.Count;
+            double positiveNumbersCount = arr.Where(x => x > 0).Count();
+            double negativeNumbersCount = arr.Where(x => x < 0).Count();
+            double zeroCount = arr.Where(x => x == 0).Count();
+            double postiveRatio = Math.Round(positiveNumbersCount / arrLength, 6);
+            double negativeRatio = Math.Round(negativeNumbersCount / arrLength, 6);
+            double zeroRatio = Math.Round(zeroCount / arrLength, 6);
+            Console.WriteLine(postiveRatio.ToString("N6"));
+            Console.WriteLine(negativeRatio.ToString("N6"));
+            Console.WriteLine(zeroRatio.ToString("N6"));
+
         }
     }
 }
