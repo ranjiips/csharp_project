@@ -49,6 +49,18 @@
               "target": "Package",
               "version": "[32.0.3, )"
             },
+            "ExtentReports": {
+              "target": "Package",
+              "version": "[5.0.5-beta1, )"
+            },
+            "ExtentReports.Core": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[3.5.0-preview.24325.7, )"
+            },
             "NUnit3TestAdapter": {
               "target": "Package",
               "version": "[4.5.0, )"

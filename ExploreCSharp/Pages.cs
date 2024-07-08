@@ -48,6 +48,5 @@ namespace ExploreCSharp
         //public static HandleAPIs HandleAPIs => _handleAPIs??(_handleAPIs=new HandleAPIs());
         public static HandleAPIs HandleAPIs => _handleAPIs??new HandleAPIs();
         public static SamplePrograms SamplePrograms => _samplePrograms??(_samplePrograms = new SamplePrograms());
-
     }
 }
