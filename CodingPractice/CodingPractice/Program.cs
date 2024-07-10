@@ -7,21 +7,32 @@ namespace CodingPractice
         static void Main(string[] args)
         {
             StaticClassExamples.ColorfulWriteLine("\n***********  C Sharp coding Practice ***********\n", ConsoleColor.Cyan);
-            SolveHackerRankProblems();
+            SolveWarmUpProblems();
+            SolveImplementationProblems();
         }
 
-        public static void SolveHackerRankProblems()
+        public static void SolveWarmUpProblems()
         {
-            StaticClassExamples.ColorfulWriteLine("\n***********  Solve Hacker Rank Problems ***********\n", ConsoleColor.Yellow);
-            Pages.HackerRankProblems.PrintSumOfArray();
-            Pages.HackerRankProblems.CompareTriplets();
-            Pages.HackerRankProblems.SumOfTheArrayElements();
-            //Pages.HackerRankProblems.GetTheDiagonalDifferenceOfSquareMatrix();
-            Pages.HackerRankProblems.PrintPositiveNegativeZeroRatio();
-            Pages.HackerRankProblems.PrintStairCaseProblem(4);
-            Pages.HackerRankProblems.PrintMinimumMaximumSum();
-            Pages.HackerRankProblems.BirthdayCakeCandles();
-            Pages.HackerRankProblems.TimeConversion();
+            StaticClassExamples.ColorfulWriteLine("\n***********  Solve Hacker Rank - Warmup Problems ***********\n", ConsoleColor.Yellow);
+            Pages.WarmupProblems.PrintSumOfArray();
+            Pages.WarmupProblems.CompareTriplets();
+            Pages.WarmupProblems.SumOfTheArrayElements();
+            //Pages.WarmupProblems.GetTheDiagonalDifferenceOfSquareMatrix();
+            Pages.WarmupProblems.PrintPositiveNegativeZeroRatio();
+            Pages.WarmupProblems.PrintStairCaseProblem(4);
+            Pages.WarmupProblems.PrintMinimumMaximumSum();
+            Pages.WarmupProblems.BirthdayCakeCandles();
+            Pages.WarmupProblems.TimeConversion();
+        }
+
+        public static void SolveImplementationProblems()
+        {
+            StaticClassExamples.ColorfulWriteLine("\n***********  Solve Hacker Rank - Implementation Problems ***********\n", ConsoleColor.Yellow);
+            Pages.ImplementationProblems.GradingStudents();
+            Pages.ImplementationProblems.CountAppleAndOrange();
+            Pages.ImplementationProblems.NumberLineJumps();
+            Pages.ImplementationProblems.BetweenTwoSets();
+            Pages.ImplementationProblems.BreakingTheRecords();
         }
     }
 }

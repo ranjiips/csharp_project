@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodingPractice.HackerRank
+namespace CodingPractice.HackerRankProblems
 {
-    public class HackerRankProblems
+    public class WarmupProblems
     {
         public void PrintSumOfArray()
         {

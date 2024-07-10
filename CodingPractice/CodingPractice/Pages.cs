@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CodingPractice.HackerRank;
+using CodingPractice.HackerRankProblems;
 
 namespace CodingPractice
 {
     public class Pages
     {
-        private static HackerRankProblems _hackerRankProblems;
-        public static HackerRankProblems HackerRankProblems => _hackerRankProblems ?? (_hackerRankProblems = new HackerRankProblems());
+        private static WarmupProblems _warmupProblems;
+        private static ImplementationProblems _implementationProblems;
+        public static WarmupProblems WarmupProblems => _warmupProblems ?? (_warmupProblems = new WarmupProblems());
+        public static ImplementationProblems ImplementationProblems => _implementationProblems ?? (_implementationProblems = new ImplementationProblems());
     }
 }
