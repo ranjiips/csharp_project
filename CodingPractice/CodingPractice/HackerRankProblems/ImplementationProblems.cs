@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -250,6 +251,189 @@ namespace CodingPractice.HackerRankProblems
             results.Add(lowestScore);
             Console.WriteLine($"Highest Score: {highestScore}, Lowest Score: {lowestScore}");
             Console.WriteLine($"Highest Counter: {highCounter}, Lowest Counter: {lowCounter}");
+        }
+
+        public void SubarrayDivision()
+        {
+            /*Two children, Lily and Ron, want to share a chocolate bar. Each of the squares has an integer on it.
+
+            Lily decides to share a contiguous segment of the bar selected such that:
+
+            The length of the segment matches Ron's birth month, and,
+            The sum of the integers on the squares is equal to his birth day.
+            Determine how many ways she can divide the chocolate.
+
+            Function Description:
+            birthday has the following parameter(s):
+
+            int s[n]: the numbers on each of the squares of chocolate
+            int d: Ron's birth day
+            int m: Ron's birth month
+            
+            Returns:
+            int: the number of ways the bar can be divided
+             */
+            StaticClassExamples.ColorfulWriteLine("\n*********** Subarray Division ***********\n", ConsoleColor.Green);
+
+            List<int> chocolates = new List<int>() { 2,2,1,3,2 };
+            int d = 4;
+            int m = 2;
+            //int arrLen = chocolates.Count;
+            int matchCounter = 0;
+            for (int i = 0; i < chocolates.Count; i++)
+            {
+                var sublist = chocolates.Skip(i).Take(m).ToList();
+                if (sublist.Sum() == d)
+                    matchCounter++;
+            }
+            Console.WriteLine($"Matching age is {matchCounter}");
+
+        }
+
+        public void DivisibleSumPairs()
+        {
+            /*Given an array of integers and a positive integer k, determine the number of (i,j) pairs where i<j and ar[i] + ar[j]
+             * is divisible by k.
+
+            Example:
+            ar=[1,2,3,4,5,6]
+            k=5
+            Three pairs meet the criteria: [1,4],[2,3] and [4,6].
+            Returns
+            - int: the number of pairs
+             */
+            StaticClassExamples.ColorfulWriteLine("\n*********** Divisible Sum Pairs ***********\n", ConsoleColor.Green);
+            List<int> ar = new List<int> { 1, 3, 2, 6, 1, 2 };
+            int k = 3;
+            int counter = 0;
+            for(int i = 0; i < ar.Count;i++)
+            {
+                for(int j = i+1; j < ar.Count; j++)
+                {
+                    Console.WriteLine($"{ar[i]}, {ar[j]}, {(ar[i] + ar[j]) % k}");
+                    if ((ar[i] + ar[j]) % k == 0)
+                        counter++;
+                }
+            }
+            Console.WriteLine($"Total sum pairs is {counter}");
+        }
+
+        public void MigratoryBirds()
+        {
+            /*Given an array of bird sightings where every element represents a bird type id, 
+             * determine the id of the most frequently sighted type. If more than 1 type has been spotted that maximum amount, 
+             * return the smallest of their ids.
+
+            Example
+            arr=[1,1,2,2,3]
+
+            There are two each of types 1 and 2, and one sighting of type 3. Pick the lower of the two types seen twice: type 1.
+            
+            Returns:
+            int: the lowest type id of the most frequently sighted birds
+             */
+            StaticClassExamples.ColorfulWriteLine("\n*********** Migratory Birds ***********\n", ConsoleColor.Green);
+            List<int> arr = new List<int> { 1, 4, 4, 4, 5, 3, 1, 1 };
+            int listCount = arr.Count;
+            int[] dummyArray = new int[listCount+1];
+            Array.Fill(dummyArray, 0);
+            for(int i = 0;i< listCount;i++)
+            {
+                int j = arr[i];
+                dummyArray[j] += 1;
+            }
+            var dummyList = dummyArray.ToList();
+            var index = dummyList.FindIndex(x => x == dummyList.Max());
+            Console.WriteLine(index);
+            foreach(int i in dummyArray)
+            {
+                Console.Write(i+" ");
+            }
+        }
+
+        public void DayOfTheProgrammer()
+        {
+            /*Marie invented a Time Machine and wants to test it by time-traveling to visit Russia on the Day of the Programmer 
+             * (the 256th day of the year) during a year in the inclusive range from 1700 to 2700.
+            From 1700 to 1917, Russia's official calendar was the Julian calendar; since 1919 they used the Gregorian calendar system. 
+            The transition from the Julian to Gregorian calendar system occurred in 1918, when the next day after January 31st was 
+            February 14th. This means that in 1918, February 14th was the 32nd day of the year in Russia.
+            In both calendar systems, February is the only month with a variable amount of days; it has 29 days during a leap year, 
+            and 28 days during all other years. In the Julian calendar, leap years are divisible by 4; in the Gregorian calendar, 
+            leap years are either of the following:
+
+            Divisible by 400.
+            Divisible by 4 and not divisible by 100.
+
+            Given a year, y, find the date of the 256th day of that year according to the official Russian calendar during that year. 
+            Then print it in the format dd.mm.yyyy, where dd is the two-digit day, mm is the two-digit month, and yyyy is y.
+
+            For example, the given  year= 1984. 1984 is divisible by 4, so it is a leap year. 
+            The 256th day of a leap year after 1918 is September 12, 
+            so the answer is 12.09.1984.
+             * 
+             */
+            StaticClassExamples.ColorfulWriteLine("\n*********** Day of the Programmer ***********\n", ConsoleColor.Green);
+            int year = 1920;
+
+            if (year == 1918)
+                Console.WriteLine("26.09.2018");
+            else if (year < 1917 && year% 4 == 0)
+                Console.WriteLine($"12.09.{year}");
+            else if (year > 1918 && (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)))
+                Console.WriteLine($"12.09.{year}");
+            else
+                Console.WriteLine($"13.09.{year}");
+        }
+
+        public void BillDivision()
+        {
+            /*Two friends Anna and Brian, are deciding how to split the bill at a dinner. Each will only pay for the items they consume. 
+             * Brian gets the check and calculates Anna's portion. You must determine if his calculation is correct.
+
+            For example, assume the bill has the following prices: bill=[2,4,6]. Anna declines to eat item bill[2] which costs 6. 
+            If Brian calculates the bill correctly, Anna will pay (2+4)/2=3. If he includes the cost of bill[2], 
+            he will calculate (2+4+6)/2=6. In the second case, he should refund 3 to Anna.
+
+            Function Description
+
+            Complete the bonAppetit function in the editor below. It should print Bon Appetit if the bill is fairly split. 
+            Otherwise, it should print the integer amount of money that Brian owes Anna.
+
+            bonAppetit has the following parameter(s):
+
+            bill: an array of integers representing the cost of each item ordered
+            k: an integer representing the zero-based index of the item Anna doesn't eat
+            b: the amount of money that Anna contributed to the bill
+
+            Example:
+            If Brian did not overcharge Anna, print Bon Appetit on a new line; otherwise, print the difference (i.e.,charged-actual )
+            that Brian must refund to Anna. This will always be an integer.
+
+            item=4 
+            didnot eat item=1
+            3 10 2 9
+            12
+            Output:
+            5
+             */
+            StaticClassExamples.ColorfulWriteLine("\n*********** Bill Division ***********\n", ConsoleColor.Green);
+            List<int> itemBill = new List<int>() { 72, 53, 60, 66, 90, 62, 12, 31, 36, 94 };
+            int k = 6;
+            int b = 288;
+
+            int totalBillAmount = itemBill.Sum(x => x);
+            int getValueByIndex = itemBill.ElementAt(k);
+            int shareWithoutItem = totalBillAmount- getValueByIndex;
+
+            Console.WriteLine($"Total Share: {totalBillAmount}, Item did not eat by Anna: {getValueByIndex}");
+            Console.WriteLine($"Bill execulding the item which does not eat by Anna: {shareWithoutItem}");
+            Console.WriteLine($"Actual Share: {totalBillAmount/2}, Anna Share: {shareWithoutItem/2}, Anna Paid: {b}, Refund to Anna: {b-(shareWithoutItem / 2)}");
+            
+            if (shareWithoutItem / 2 == b)
+                Console.WriteLine("Bon Appetit");
+            else
+                Console.WriteLine(b - (shareWithoutItem / 2));
         }
     }
 }

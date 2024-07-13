@@ -7,7 +7,7 @@ namespace CodingPractice
         static void Main(string[] args)
         {
             StaticClassExamples.ColorfulWriteLine("\n***********  C Sharp coding Practice ***********\n", ConsoleColor.Cyan);
-            SolveWarmUpProblems();
+            //SolveWarmUpProblems();
             SolveImplementationProblems();
         }
 
@@ -33,6 +33,11 @@ namespace CodingPractice
             Pages.ImplementationProblems.NumberLineJumps();
             Pages.ImplementationProblems.BetweenTwoSets();
             Pages.ImplementationProblems.BreakingTheRecords();
+            Pages.ImplementationProblems.SubarrayDivision();
+            Pages.ImplementationProblems.DivisibleSumPairs();
+            Pages.ImplementationProblems.MigratoryBirds();
+            Pages.ImplementationProblems.DayOfTheProgrammer();
+            Pages.ImplementationProblems.BillDivision();
         }
     }
 }

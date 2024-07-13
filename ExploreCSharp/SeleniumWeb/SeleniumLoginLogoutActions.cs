@@ -17,11 +17,29 @@ namespace ExploreCSharp.SeleniumWeb
         By welcomeMessageLocator = By.XPath("//div[@id='content']//h4");
         By logoutButtonLocator = By.XPath("//a[contains(@class,'button')]/i[contains(text(),'Logout')]");
         
+        public void LoginPageUsingFormAuthentication(string pageName)
+        {
+            LoadPageByText(pageName);
+            Pages.SeleniumLoginLogoutActions.VerifyPageTitle("Login Page", Pages.SeleniumLoginLogoutActions.loginpageHeaderLocator);
+            Pages.SeleniumLoginLogoutActions.LoginWithValidCredentials("tomsmith", "SuperSecretPassword!");
+            Pages.SeleniumLoginLogoutActions.VerifyMessage("You logged into a secure area");
+            Pages.SeleniumLoginLogoutActions.LogoutAction();
+            Pages.SeleniumLoginLogoutActions.VerifyMessage("You logged out of the secure area");
+            Pages.SeleniumLoginLogoutActions.BackToMainPage();
+        }
 
         public void LoginWithValidCredentials(string username, string password)
         {
-            EnterText(userNameLocator, username);
+            //Enter username using the relative locators - selenium 4 feature
+            //EnterText(userNameLocator, username);
+            IWebElement usernameLabel = Driver.FindElement(By.XPath("//label[text()='Username']"));
+            IWebElement element = Driver.FindElement(RelativeBy.WithLocator(By.TagName("input")).Below(usernameLabel));
+            element.SendKeys(username);
+
+            //Enter password
             EnterText(passwordLocator, password);
+
+            //Click Login button
             ClickElement(submitLocator);
         }
 

@@ -32,11 +32,11 @@ namespace ExploreCSharp
             //ImplementExtensionMethods();
             //ImplementRestAPIMethods();
             //ImplementJsonConcepts();
-            ////ImplementSeleniumConcepts();
+            ImplementSeleniumConcepts();
             //ImplementEnumerationConcepts();
             //CountTheCharacters("abcdabcdpqr");
             //ImplementInterfaceConcepts();
-            SampleTestScenario();
+            //SampleTestScenario();
         }
 
         public static void ExtentReportsFunction()
@@ -265,13 +265,8 @@ namespace ExploreCSharp
 
             Pages.SeleniumLoginLogoutActions.NavigateToURL(baseurl);
 
-            //Pages.SeleniumLoginLogoutActions.LoadPageByText("Form Authentication");
-            //Pages.SeleniumLoginLogoutActions.VerifyPageTitle("Login Page", Pages.SeleniumLoginLogoutActions.loginpageHeaderLocator);
-            //Pages.SeleniumLoginLogoutActions.LoginWithValidCredentials("tomsmith", "SuperSecretPassword!");
-            //Pages.SeleniumLoginLogoutActions.VerifyMessage("You logged into a secure area");
-            //Pages.SeleniumLoginLogoutActions.LogoutAction();
-            //Pages.SeleniumLoginLogoutActions.VerifyMessage("You logged out of the secure area");
-            //Pages.SeleniumLoginLogoutActions.BackToMainPage();
+            Pages.SeleniumLoginLogoutActions.LoginPageUsingFormAuthentication("Form Authentication");
+
 
             //Pages.SeleniumJavaScriptActions.ClickLinkByText("Basic Auth");
             //Pages.SeleniumJavaScriptActions.EnterCredentialsInJSPopup();
