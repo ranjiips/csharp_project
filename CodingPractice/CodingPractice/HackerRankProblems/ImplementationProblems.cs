@@ -220,7 +220,7 @@ namespace CodingPractice.HackerRankProblems
                  3      24     10       24       1   1
             Given the scores for a season, determine the number of times Maria breaks her records for most and least points scored during the season.
              */
-            StaticClassExamples.ColorfulWriteLine("\n*********** Breaking The Records ***********\n", ConsoleColor.Green);
+            StaticClassExamples.ColorfulWriteLine("\n*********** Breaking The Own Records ***********\n", ConsoleColor.Green);
             List<int> scores = new List<int>() { 10, 5, 20, 20, 4, 5, 2, 25, 1 };
             int highestScore = 0, lowestScore = 0, highCounter = 0, lowCounter = 0;
             int iterationCount = 0;
