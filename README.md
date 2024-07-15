@@ -2,7 +2,6 @@ Author# Ranjith Kumar (ranjiips)
 
 I have uploaded the C Sharp projects, hackerrank solutions, BDD (Specflow) automation projects here. 
 I am updating all these projects regularly (especially Hacker Rank solutions).
-
 Below is the summary of each project:
 
 Coding Practice - solving the hacker rank problems and updating here
