@@ -6,3 +6,4 @@ global using System.Net.Mail;
 global using System;
 global using OpenQA.Selenium;
 global using NUnit.Framework;
+using OpenQA.Selenium.Chrome;
