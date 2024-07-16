@@ -12,7 +12,7 @@ Scenario: Signup the user
 	Then I should see the Sign up popup appear
 	When I fill the new username and password and click the Sign up button
 		| Username   | Password  |
-		| ranji_ips1 | July@2024 |
+		| ranji_ips3 | July@2024 |
 	Then I should see the Sign up successful. popup message
 
 @negative
