@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\RANJITH\\.nuget\\packages\\": {}
+    "C:\\Users\\sranjith\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\csharp_projects\\CodingPractice\\CodingPractice\\CodingPractice.csproj",
+      "projectUniqueName": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\CodingPractice\\CodingPractice\\CodingPractice.csproj",
       "projectName": "CodingPractice",
-      "projectPath": "E:\\Projects\\csharp_projects\\CodingPractice\\CodingPractice\\CodingPractice.csproj",
-      "packagesPath": "C:\\Users\\RANJITH\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\csharp_projects\\CodingPractice\\CodingPractice\\obj\\",
+      "projectPath": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\CodingPractice\\CodingPractice\\CodingPractice.csproj",
+      "packagesPath": "C:\\Users\\sranjith\\.nuget\\packages\\",
+      "outputPath": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\CodingPractice\\CodingPractice\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\RANJITH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sranjith\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -66,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

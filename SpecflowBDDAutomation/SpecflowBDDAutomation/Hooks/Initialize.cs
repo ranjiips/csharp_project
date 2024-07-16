@@ -29,6 +29,9 @@
         [AfterScenario]
         public void AfterScenario() => Console.WriteLine("After Scenario execution");
 
+        [AfterFeature]
+        public static void AfterFeatureTest() => Pages.Pages.BaseWebDriver.CloseBrowserInstance();
+
 
     }
 }
