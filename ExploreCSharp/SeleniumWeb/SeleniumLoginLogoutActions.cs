@@ -28,6 +28,47 @@ namespace ExploreCSharp.SeleniumWeb
             Pages.SeleniumLoginLogoutActions.BackToMainPage();
         }
 
+        public void HandleCheckBoxes(string pageName)
+        {
+            LoadPageByText(pageName);
+            Pages.SeleniumFormActions.VerifyPageTitle("Checkboxes", Pages.SeleniumFormActions.checkboxPageHeaderLocator);
+            Pages.SeleniumFormActions.UnselectAndSelectCheckbox();
+            Pages.SeleniumFormActions.BackToMainPage();
+        }
+
+        public void EnterBasicAuthinJSPopup()
+        {
+            Pages.SeleniumJavaScriptActions.ClickLinkByText("Basic Auth");
+            Pages.SeleniumJavaScriptActions.EnterCredentialsInJSPopup();
+            Pages.SeleniumJavaScriptActions.VerifyJavaScriptLoginMessage();
+            Pages.SeleniumJavaScriptActions.BackToMainPage();
+        }
+
+        public void HandleDragDrop(string pageName)
+        {
+            LoadPageByText(pageName);
+            Pages.SeleniumMouseActions.VerifyPageTitle("Drag and Drop", Pages.SeleniumFormActions.checkboxPageHeaderLocator);
+            Pages.SeleniumMouseActions.DragAndDropAction();
+            Pages.SeleniumFormActions.BackToMainPage();
+        }
+
+        public void HandleFrames(string pageName)
+        {
+            Pages.SeleniumFrames.LoadPageByText(pageName);
+            Pages.SeleniumFrames.VerifyPageTitle("Frames", Pages.SeleniumFormActions.checkboxPageHeaderLocator);
+            Pages.SeleniumFrames.LoadPageByText("Nested Frames");
+            Pages.SeleniumFrames.SwitchToFrameAction();
+            Pages.SeleniumFormActions.BackToMainPage();
+        }
+
+        public void HandleMultipleWindows(string pageName)
+        {
+            Pages.SeleniumFrames.LoadPageByText(pageName);
+            Pages.SeleniumFrames.VerifyPageTitle("Opening a new window", Pages.SeleniumFormActions.checkboxPageHeaderLocator);
+            Pages.SeleniumMulitpleWindows.OpenChildWindow("New Window");
+            Pages.SeleniumFormActions.BackToMainPage();
+        }
+
         public void LoginWithValidCredentials(string username, string password)
         {
             //Enter username using the relative locators - selenium 4 feature

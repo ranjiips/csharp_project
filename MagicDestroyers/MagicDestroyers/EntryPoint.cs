@@ -22,6 +22,8 @@ namespace MagicDestroyers
                 new Mage(),
                 new Druid(),
                 new Necromancer(),
+                new Necromancer(),
+                new Necromancer(),
                 //new Warrior("Warrior_Gobi",1),
                 //new Warrior("Warrior_Hari",1),
                 //new Mage("Mage_Thamizh",1,200),

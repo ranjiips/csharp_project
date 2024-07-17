@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace ExploreCSharp
@@ -56,6 +57,17 @@ namespace ExploreCSharp
             new StudentMarks{ StudentID=108, StudentName="Rahul", Class=8, Tamil=35, English=73, Maths=30, Science=65, Social=46 },
             new StudentMarks{ StudentID=109, StudentName="Gomathi", Class=6, Tamil=87, English=72, Maths=60, Science=88, Social=71 },
             new StudentMarks{ StudentID=110, StudentName="Sarath", Class=6, Tamil=66, English=88, Maths=40, Science=61, Social=57 }
+        };
+
+        List<StudentMarks> ExtendedStudentDetails = new List<StudentMarks>
+        {
+            new StudentMarks{ StudentID=101, StudentName="Sunil", Class=8, Tamil=87, English=76, Maths=89, Science=92, Social=80 },
+            new StudentMarks{ StudentID=102, StudentName="Prasath", Class=8, Tamil=67, English=67, Maths=90, Science=68, Social=70 },
+            new StudentMarks{ StudentID=103, StudentName="Kathir", Class=7, Tamil=77, English=66, Maths=55, Science=75, Social=60 },
+            new StudentMarks{ StudentID=104, StudentName="Archana", Class=8, Tamil=89, English=86, Maths=64, Science=90, Social=75 },
+            new StudentMarks{ StudentID=105, StudentName="Ananya", Class=7, Tamil=50, English=90, Maths=72, Science=65, Social=68 },
+            new StudentMarks{ StudentID=106, StudentName="Divya", Class=8, Tamil=65, English=88, Maths=65, Science=72, Social=67 },
+            new StudentMarks{ StudentID=107, StudentName="Sundar", Class=7, Tamil=93, English=54, Maths=89, Science=68, Social=76 }
         };
 
 
@@ -328,6 +340,112 @@ namespace ExploreCSharp
             {
                 Console.Write(sNew[i]);
             }
+        }
+
+        public void GetValuesBasedOnType()
+        {
+            Console.WriteLine("\n***********  Get Values Based On Type using - OfType() ***********\n");
+            ArrayList list = new ArrayList() { "a", "b", 2,0,"c", true, 5.4, 3.67, 22, "d", false, "h"};
+
+            Console.Write("Actual Values: ");
+            foreach (var s in list)
+                Console.Write(s + " ");
+            Console.WriteLine();
+
+            var getStringValues = from s in list.OfType<string>() select s;
+            Console.Write("String Type: ");
+            foreach (var s in getStringValues)
+                Console.Write(s+" ");
+            Console.WriteLine();
+
+            var getIntegerValues = from s in list.OfType<int>() select s;
+            Console.Write("Integer Type: ");
+            foreach (var s in getIntegerValues)
+                Console.Write(s + " ");
+            Console.WriteLine();
+
+            var getBooleanValues = from s in list.OfType<bool>() select s;
+            Console.Write("Boolean Type: ");
+            foreach (var s in getBooleanValues)
+                Console.Write(s + " ");
+            Console.WriteLine();
+
+            var getDecimalValues = from s in list.OfType<double>() select s;
+            Console.Write("Decimal Type: ");
+            foreach (var s in getDecimalValues)
+                Console.Write(s + " ");
+            Console.WriteLine();
+        }
+
+        public void OrderByFunction()
+        {
+            Console.WriteLine("\n***********  OrderBy, ThenBy ***********\n");
+            var afterSorting = StudentDetails.OrderBy(b => b.Class).ThenBy(b=>b.Tamil).ThenBy(b=>b.Maths).ThenByDescending(b=>b.StudentID);
+            foreach(var i in afterSorting)
+            {
+                Console.WriteLine(i.StudentID +" " +i.StudentName + " " + i.Class + " " + i.Tamil + " " + i.English + " " 
+                    + i.Maths + " " + i.Science + " " + i.Social);
+            }
+        }
+
+        public void GroupByFunction()
+        {
+            Console.WriteLine("\n***********  ToLookup - Method Syntax ***********\n");
+
+            var lookupExpression = StudentDetails.ToLookup(s => s.Class);
+            foreach (var x in lookupExpression)
+            {
+                Console.WriteLine($"Lookup Key - Class: {x.Key}");
+                foreach (var i in x)
+                    Console.WriteLine(i.StudentID + " " + i.StudentName);
+            }
+
+            Console.WriteLine("\n***********  GroupBy - Method Syntax ***********\n");
+            var groupbyMethod = StudentDetails.GroupBy(s => s.Class);
+            foreach (var x in groupbyMethod)
+            {
+                Console.WriteLine($"GroupBy Key - Class: {x.Key}");
+                foreach (var i in x)
+                    Console.WriteLine(i.StudentID + " " + i.StudentName);
+            }
+
+            Console.WriteLine("\n***********  GroupBy - Query Expression ***********\n");
+            var groupbyExpression = from s in StudentDetails group s by s.Class;
+            foreach (var x in groupbyExpression)
+            {
+                Console.WriteLine($"GroupBy Key - Class: {x.Key}");
+                foreach (var i in x)
+                    Console.WriteLine(i.StudentID + " " + i.StudentName);
+            }
+        }
+
+        public void JoinFunctions()
+        {
+            Console.WriteLine("\n***********  Join Operations ***********\n");
+            var innerJoin = StudentDetails.Join(ExtendedStudentDetails, 
+                s=>s.StudentID, 
+                y=>y.StudentID, 
+                (s,y)=>new { StudentID = s.StudentID, StudentName = y.StudentName});
+            foreach (var i in innerJoin)
+                Console.WriteLine(i.StudentID + " " + i.StudentName);
+        }
+
+        public void GetIntegerFromTheString()
+        {
+            Console.WriteLine("\n***********  Fetch Integer from the given string - Using Method Syntax ***********\n");
+            string value = "ed@#12.45$%23";
+
+            string integerValues = new string(value.Where(Char.IsDigit).ToArray());
+            Console.WriteLine(integerValues);
+        }
+
+        public void FetchTheIntegerValues()
+        {
+            Console.WriteLine("\n***********  Fetch Integer from the given string - using Regular expression ***********\n");
+            string somevalue = "ed@#12.45$%23";
+            string[] intArray = Regex.Split(somevalue, "[^0-9]+");
+            foreach(var i in intArray)
+                Console.Write(i.ToString());
         }
     }
 }

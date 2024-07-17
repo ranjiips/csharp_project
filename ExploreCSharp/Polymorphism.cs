@@ -60,6 +60,7 @@ namespace ExploreCSharp
 
         public override void MakingNoise()
         {
+            base.MakingNoise();
             Console.WriteLine("Cats meow");
         }
     }

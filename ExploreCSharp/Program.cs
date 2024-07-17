@@ -32,11 +32,22 @@ namespace ExploreCSharp
             //ImplementExtensionMethods();
             //ImplementRestAPIMethods();
             //ImplementJsonConcepts();
-            ImplementSeleniumConcepts();
+            //ImplementSeleniumConcepts();
             //ImplementEnumerationConcepts();
             //CountTheCharacters("abcdabcdpqr");
             //ImplementInterfaceConcepts();
             //SampleTestScenario();
+            SampleProgram();
+        }
+
+        public static void SampleProgram()
+        {
+            string somevalue = "ed@#12.45$%23";
+            for(int i=0; i<somevalue.Length; i++)
+            {
+                if(char.IsDigit(somevalue[i]) || somevalue[i].ToString()==".")
+                    Console.Write($"{somevalue[i]}");
+            }
         }
 
         public static void ExtentReportsFunction()
@@ -89,6 +100,12 @@ namespace ExploreCSharp
             string msg = "\n***********  Implement LambdaExpressions Concepts***********\n";
             StaticClassExamples.ColorfulWriteLine(msg, ConsoleColor.Yellow);
             Pages.ExploreLinq.SampleLambdaExpressions(5);
+            Pages.ExploreLinq.GetValuesBasedOnType();
+            Pages.ExploreLinq.OrderByFunction();
+            Pages.ExploreLinq.GroupByFunction();
+            Pages.ExploreLinq.JoinFunctions();
+            Pages.ExploreLinq.GetIntegerFromTheString();
+            Pages.ExploreLinq.FetchTheIntegerValues();
         }
 
         public static void ImplementCSVFileHandlingConcepts()
@@ -169,16 +186,17 @@ namespace ExploreCSharp
         public static void MethodOverRidingConcepts()
         {
             StaticClassExamples.ColorfulWriteLine("\n***********  Implement Method Riding Concepts***********\n", ConsoleColor.White);
-            Animals ani = new Animals();
+            
             Dog dogObj = new Dog();
-            Cats catObj = new Cats();
+            //Cats catObj = new Cats();
+            Animals ani = new Cats();
 
             Console.WriteLine("Calling Base method from Animal Class");
             ani.MakingNoise();
             Console.WriteLine("Calling Override method from Dog Class");
             dogObj.MakingNoise();
             Console.WriteLine("Calling Override method from Cats Class");
-            catObj.MakingNoise();
+            ani.MakingNoise();
         }
 
         public static void ImplementEncapsulationConcepts()
@@ -222,6 +240,7 @@ namespace ExploreCSharp
             Pages.GenericCollections.UsingStack();
             Pages.GenericCollections.UsingQueue();
             Pages.GenericCollections.RemoveDuplicatesFromStringArrayList();
+            Pages.GenericCollections.UsingHashTable();
         }
         public static void ImplementExtensionMethods()
         {
@@ -266,34 +285,16 @@ namespace ExploreCSharp
             Pages.SeleniumLoginLogoutActions.NavigateToURL(baseurl);
 
             Pages.SeleniumLoginLogoutActions.LoginPageUsingFormAuthentication("Form Authentication");
+            
+            //Pages.SeleniumLoginLogoutActions.EnterBasicAuthinJSPopup();            
 
+            Pages.SeleniumLoginLogoutActions.HandleCheckBoxes("Checkboxes");
 
-            //Pages.SeleniumJavaScriptActions.ClickLinkByText("Basic Auth");
-            //Pages.SeleniumJavaScriptActions.EnterCredentialsInJSPopup();
-            //Pages.SeleniumJavaScriptActions.VerifyJavaScriptLoginMessage();
-            //Pages.SeleniumJavaScriptActions.BackToMainPage();
+            Pages.SeleniumLoginLogoutActions.HandleDragDrop("Drag and Drop");
 
-            //Pages.SeleniumFormActions.LoadPageByText("Checkboxes");
-            //Pages.SeleniumFormActions.VerifyPageTitle("Checkboxes", Pages.SeleniumFormActions.checkboxPageHeaderLocator);
-            //Pages.SeleniumFormActions.UnselectAndSelectCheckbox();
-            //Pages.SeleniumFormActions.BackToMainPage();
-
-            //Pages.SeleniumMouseActions.LoadPageByText("Drag and Drop");
-            //Pages.SeleniumMouseActions.VerifyPageTitle("Drag and Drop", Pages.SeleniumFormActions.checkboxPageHeaderLocator);
-            //Pages.SeleniumMouseActions.DragAndDropAction();
-            //Pages.SeleniumFormActions.BackToMainPage();
-
-            //Pages.SeleniumFrames.LoadPageByText("Frames");
-            //Pages.SeleniumFrames.VerifyPageTitle("Frames", Pages.SeleniumFormActions.checkboxPageHeaderLocator);
-            //Pages.SeleniumFrames.LoadPageByText("Nested Frames");
-            //Pages.SeleniumFrames.SwitchToFrameAction();
-            //Pages.SeleniumFormActions.BackToMainPage();
-
-            Pages.SeleniumFrames.LoadPageByText("Multiple Windows");
-            Pages.SeleniumFrames.VerifyPageTitle("Opening a new window", Pages.SeleniumFormActions.checkboxPageHeaderLocator);
-            Pages.SeleniumMulitpleWindows.OpenChildWindow("New Window");
-            Pages.SeleniumFormActions.BackToMainPage();
-
+            Pages.SeleniumLoginLogoutActions.HandleFrames("Frames");
+            
+            Pages.SeleniumLoginLogoutActions.HandleMultipleWindows("Multiple Windows");
 
             Pages.SeleniumLoginLogoutActions.CloseBrowser();
         }
