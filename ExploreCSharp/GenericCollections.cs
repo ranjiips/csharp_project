@@ -68,10 +68,17 @@ namespace ExploreCSharp
         {
 
         }
-
         public void UsingHashTable()
         {
+            Hashtable hash = new Hashtable();
+            hash.Add(1, "one");
+            hash.Add(2, "two");
+            hash.Add(3, "three");
 
+            foreach (DictionaryEntry kvp in hash)
+            {
+                Console.WriteLine($"{kvp.Key}  {kvp.Value}");
+            }
         }
 
         public void UsingStack()

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MagicDestroyers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9603f7d60a36dfbed0223a92290594d81e41b227")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9eb0dcde5a32c0b3f590c7bb7a771175a5f53e8")]
 [assembly: System.Reflection.AssemblyProductAttribute("MagicDestroyers")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MagicDestroyers")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

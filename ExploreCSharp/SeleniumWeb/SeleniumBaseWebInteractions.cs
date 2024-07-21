@@ -16,34 +16,10 @@ using System.IO;
 
 namespace ExploreCSharp.SeleniumWeb
 {
-    public abstract class SeleniumBaseWebInteractions
+    public abstract class SeleniumBaseWebInteractions: Hooks
     {
-        public static IWebDriver Driver = null;
         public int elementTimeout = 60;
-        By MainPageHeaderLocator = By.CssSelector("div#content h2");
-
-
-        public SeleniumBaseWebInteractions()
-        {
-            if(Driver==null)
-                Driver = GetWebDriver();
-        }
-
-        public IWebDriver GetWebDriver()
-        {
-            var options = new ChromeOptions();
-            options.AddArguments("--disable-extensions");
-            options.AddArguments("disable-infobars");
-            options.AddUserProfilePreference("credentials_enable_service", false);
-            options.AddUserProfilePreference("profile.password_manager_enabled", false);
-            options.AddUserProfilePreference("profile.default_content_setting_values.clipboard", 1);
-            Driver = new ChromeDriver(options);
-            Driver.Manage().Timeouts().ImplicitWait = (TimeSpan.FromSeconds(0));
-            Driver.Manage().Timeouts().PageLoad = (TimeSpan.FromSeconds(120));
-            Driver.Manage().Cookies.DeleteAllCookies();
-            Driver.Manage().Window.Maximize();
-            return Driver;
-        }
+        By MainPageHeaderLocator = By.CssSelector("div#content h2");        
 
         public void NavigateToURL(string url)
         {
@@ -133,10 +109,6 @@ namespace ExploreCSharp.SeleniumWeb
             SaveScreenshot();
             IWebElement element = Driver.FindElement(locator);
             return element.Text;
-        }
-        public void CloseBrowser()
-        {
-            Driver.Quit();
         }
         public IAlert SwitchToAlert()
         {
