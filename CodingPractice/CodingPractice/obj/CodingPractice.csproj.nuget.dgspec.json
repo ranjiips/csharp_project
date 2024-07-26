@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\CodingPractice\\CodingPractice\\CodingPractice.csproj": {}
+    "E:\\Projects\\GitRepo\\csharp_project\\CodingPractice\\CodingPractice\\CodingPractice.csproj": {}
   },
   "projects": {
-    "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\CodingPractice\\CodingPractice\\CodingPractice.csproj": {
+    "E:\\Projects\\GitRepo\\csharp_project\\CodingPractice\\CodingPractice\\CodingPractice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\CodingPractice\\CodingPractice\\CodingPractice.csproj",
+        "projectUniqueName": "E:\\Projects\\GitRepo\\csharp_project\\CodingPractice\\CodingPractice\\CodingPractice.csproj",
         "projectName": "CodingPractice",
-        "projectPath": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\CodingPractice\\CodingPractice\\CodingPractice.csproj",
-        "packagesPath": "C:\\Users\\sranjith\\.nuget\\packages\\",
-        "outputPath": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\CodingPractice\\CodingPractice\\obj\\",
+        "projectPath": "E:\\Projects\\GitRepo\\csharp_project\\CodingPractice\\CodingPractice\\CodingPractice.csproj",
+        "packagesPath": "C:\\Users\\RANJITH\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\GitRepo\\csharp_project\\CodingPractice\\CodingPractice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sranjith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RANJITH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

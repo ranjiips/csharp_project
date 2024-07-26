@@ -16,7 +16,7 @@ namespace ExploreCSharp
         {
             //ExtentReportsFunction();
             Console.WriteLine("Explore C Sharp");
-            //ImplementLinqConcepts();
+            ImplementLinqConcepts();
             //ImplementCSVFileHandlingConcepts();
             //ImplementExcelFileHandlingConcepts();
             //ImplementSamplePrograms();
@@ -37,7 +37,8 @@ namespace ExploreCSharp
             //CountTheCharacters("abcdabcdpqr");
             //ImplementInterfaceConcepts();
             //SampleTestScenario();
-            SampleProgram();
+            //SampleProgram();
+            //ImplementReflectionConcepts();
         }
 
         public static void SampleProgram()
@@ -343,6 +344,12 @@ namespace ExploreCSharp
             Console.WriteLine(negativeRatio.ToString("N6"));
             Console.WriteLine(zeroRatio.ToString("N6"));
 
+        }
+
+        public static void ImplementReflectionConcepts()
+        {
+            StaticClassExamples.ColorfulWriteLine("\n***********  Implement Reflection Concepts***********\n", ConsoleColor.Yellow);
+            Pages.ReflectionImplementation.GetAssembelyType();
         }
     }
 }

@@ -8128,19 +8128,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sranjith\\.nuget\\packages\\": {}
+    "C:\\Users\\RANJITH\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\ExploreCSharp\\ExploreCSharp.csproj",
+      "projectUniqueName": "E:\\Projects\\GitRepo\\csharp_project\\ExploreCSharp\\ExploreCSharp.csproj",
       "projectName": "ExploreCSharp",
-      "projectPath": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\ExploreCSharp\\ExploreCSharp.csproj",
-      "packagesPath": "C:\\Users\\sranjith\\.nuget\\packages\\",
-      "outputPath": "C:\\Ranjith\\Learnings\\Projects\\csharp_project\\ExploreCSharp\\obj\\",
+      "projectPath": "E:\\Projects\\GitRepo\\csharp_project\\ExploreCSharp\\ExploreCSharp.csproj",
+      "packagesPath": "C:\\Users\\RANJITH\\.nuget\\packages\\",
+      "outputPath": "E:\\Projects\\GitRepo\\csharp_project\\ExploreCSharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sranjith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\RANJITH\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8240,7 +8240,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }
