@@ -9,6 +9,10 @@ namespace CodingPractice
             StaticClassExamples.ColorfulWriteLine("\n***********  C Sharp coding Practice ***********\n", ConsoleColor.Cyan);
             //SolveWarmUpProblems();
             SolveImplementationProblems();
+
+            Console.WriteLine("\npress any key to exit the process...");
+            // basic use of "Console.ReadKey()" method 
+            Console.ReadKey();
         }
 
         public static void SolveWarmUpProblems()
@@ -38,6 +42,7 @@ namespace CodingPractice
             Pages.ImplementationProblems.MigratoryBirds();
             Pages.ImplementationProblems.DayOfTheProgrammer();
             Pages.ImplementationProblems.BillDivision();
+            Pages.ImplementationProblems.SockMerchant();
         }
     }
 }

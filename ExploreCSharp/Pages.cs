@@ -27,6 +27,7 @@ namespace ExploreCSharp
         private static StringOperations _stringOperations;
         private static GenericCollections _genericCollections;
         private static HandleAPIs _handleAPIs;
+        private static ReflectionImplementation _reflectionImplementation;
 
 
         public static SeleniumLoginLogoutActions SeleniumLoginLogoutActions => _loginLogoutActionsPage ?? (_loginLogoutActionsPage = new SeleniumLoginLogoutActions());
@@ -48,5 +49,6 @@ namespace ExploreCSharp
         //public static HandleAPIs HandleAPIs => _handleAPIs??(_handleAPIs=new HandleAPIs());
         public static HandleAPIs HandleAPIs => _handleAPIs??new HandleAPIs();
         public static SamplePrograms SamplePrograms => _samplePrograms??(_samplePrograms = new SamplePrograms());
+        public static ReflectionImplementation ReflectionImplementation => _reflectionImplementation ?? (_reflectionImplementation = new ReflectionImplementation());
     }
 }
