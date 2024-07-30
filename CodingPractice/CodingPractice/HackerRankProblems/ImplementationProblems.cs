@@ -449,7 +449,7 @@ namespace CodingPractice.HackerRankProblems
             There is one pair of color 1 and one of color 2. There are three odd socks left, 
             one of each color. The number of pairs is 2.
              */
-
+            StaticClassExamples.ColorfulWriteLine("\n*********** Sock Merchant ***********\n", ConsoleColor.Green);
             //List<int> ar = new List<int>() { 1, 2, 1, 2, 1, 3, 2 };
             List<int> ar = new List<int>() { 10, 20, 20, 10, 10, 30, 50, 10, 20 };
             Console.WriteLine($"Original elements are {string.Join(' ', ar)}");
@@ -465,6 +465,187 @@ namespace CodingPractice.HackerRankProblems
                     pairs=pairs+ (occurance / 2);
             }
             Console.WriteLine($"Total  number of pairs:{pairs}");
+        }
+
+        public void DrawingBook()
+        {
+            /*A teacher asks the class to open their books to a page number. 
+             * A student can either start turning pages from the front of the book or from the back of the book.
+             * They always turn pages one at a time. When they open the book, page 1 is always on the right side:
+
+            When they flip page 1, they see pages 2 and 3. Each page except the last page will always 
+            be printed on both sides. The last page may only be printed on the front, given the length of 
+            the book. If the book is n pages long, and a student wants to turn to page p, 
+            what is the minimum number of pages to turn? They can start at the beginning or the end of the book.
+
+            Given n and p, find and print the minimum number of pages that must be turned in order to 
+            arrive at page p.
+
+            Example:
+            n=5; p=3
+            if the student wants to get to page 3, they open the book to page 1, flip 1 page and they 
+            are on the correct page. If they open the book to the last page, page 5, they turn 1 page and 
+            are at the correct page. Return 1
+             */
+            StaticClassExamples.ColorfulWriteLine("\n*********** Drawing Books ***********\n", ConsoleColor.Green);
+            int pages = 19;
+            int n = pages;
+            int p = 12;
+            int totalFlips = n / 2;
+            int flip = 0;
+            if (p > totalFlips)
+            {
+                for (int i = 0; i < totalFlips; i++)
+                {
+                    if(n==p)
+                    {
+                        flip = i; break;
+                    }
+                    else if(n%2==0)
+                    {
+                        if (n == p || (n + 1) == p)
+                        { flip = i; break; }
+                        else
+                            n -= 2;
+                    }
+                    else
+                    {
+                        if (n == p || (n - 1) == p)
+                        { flip = i; break; }
+                        else
+                            n -= 2;
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < totalFlips; i++)
+                {
+                    if (i==0&&(i+1)==p)
+                    {
+                        flip = i; break;
+                    }
+                    else if(flip>0 && (flip == p || (flip + 1) == p))
+                    {
+                        flip = i; break;
+                    }
+                    else
+                    {
+                        flip += 2;
+                    }
+                }
+            }
+
+            Console.WriteLine($"Total number of pages: {pages}, Page to navigate: {p}, Number of flips: {flip}");
+        }
+
+        public void CountingValleys()
+        {
+            /*An avid hiker keeps meticulous records of their hikes. During the last hike that took exactly
+             * 'steps' steps, for every step it was noted if it was an uphill, U , or a downhill, D  step.
+             * Hikes always start and end at sea level, and each step up or down represents a  unit change in altitude. We define the following terms:
+
+            A mountain is a sequence of consecutive steps above sea level, starting with a step up from sea level and ending with a step down to sea level.
+            A valley is a sequence of consecutive steps below sea level, starting with a step down from sea level and ending with a step up to sea level.
+            Given the sequence of up and down steps during a hike, find and print the number of valleys walked through.
+
+            Example
+            step=8
+            path=[DDUUUUDD] 
+
+            The hiker first enters a valley 2 units deep. 
+            Then they climb out and up onto a mountain 2 units high. 
+            Finally, the hiker returns to sea level and ends the hike.
+             */
+            StaticClassExamples.ColorfulWriteLine("\n*********** Counting Valleys ***********\n", ConsoleColor.Green);
+            int steps = 8;
+            string path = "UDDDUDUU";
+            char[] pathValue = path.ToCharArray();
+            int currStep = 0;
+            int prevStep = 0;
+            int valley = 0;
+
+
+            foreach(char c in pathValue)
+            {
+                prevStep = currStep;
+                if (c == 'D')
+                    currStep--;
+                else
+                    currStep++;
+
+                if(currStep==0 && prevStep==-1)
+                    valley++;
+            }
+            Console.WriteLine($"Number of valleys travelled: {valley}");
+        }
+
+        public void ElectronicShops()
+        {
+            /*A person wants to determine the most expensive computer keyboard and USB drive that can be 
+             * purchased with a give budget. Given price lists for keyboards and USB drives and a budget, 
+             * find the cost to buy them. If it is not possible to buy both items, return -1.
+
+            Example:
+            b=60; k=[40,50,60], u=[5,8,12]
+
+            The person can buy a 40 keyboard + 12 USB drive, or a 50 keyboard + 8 USB drive. 
+            Choose the latter as the more expensive option and return 58.
+             */
+            StaticClassExamples.ColorfulWriteLine("\n*********** Electronic Shops ***********\n", ConsoleColor.Green);
+            int budget = 60;
+            int[] keyboards = { 40, 50, 60 };
+            int[] drives = { 25, 28, 12 };
+            int expensivePrice = 0;
+
+            foreach (int k in keyboards)
+                foreach (int u in drives)
+                {
+                    int price = k + u;
+                    if (price > expensivePrice && price <= budget)
+                        expensivePrice = price;
+                }
+            if (expensivePrice == 0)
+                expensivePrice = -1;
+            Console.WriteLine($"The expensive purchase is {expensivePrice}");
+        }
+
+        public void CatAndMouse()
+        {
+            /*Two cats and a mouse are at various positions on a line. 
+             * You will be given their starting positions. Your task is to determine which cat 
+             * will reach the mouse first, assuming the mouse does not move and the cats travel 
+             * at equal speed. If the cats arrive at the same time, the mouse will be allowed to 
+             * move and it will escape while they fight.
+
+            You are given q queries in the form of x, y, and z representing the respective positions 
+            for cats A and B, and for mouse C. Complete the function to return the appropriate answer 
+            to each query, which will be printed on a new line.
+
+            If cat A catches the mouse first, print Cat A.
+            If cat B catches the mouse first, print Cat B.
+            If both cats reach the mouse at the same time, print Mouse C as the two cats fight 
+            and mouse escapes.
+            
+            Example:
+            x=2, y=5, z=4
+
+            The cats are at positions 2 (Cat A) and 5 (Cat B), and the mouse is at position 4. 
+            Cat B, at position 5 will arrive first since it is only 1 unit away while the other is 2 units
+            away. Return 'Cat B'.
+             */
+            StaticClassExamples.ColorfulWriteLine("\n*********** Cat and Mouse ***********\n", ConsoleColor.Green);
+
+            int x = 2;
+            int y = 5;
+            int z = 4;
+
+            if (Math.Abs(x - z) < Math.Abs(y - z))
+                Console.WriteLine("Cat A catches the mouse");
+            else if (Math.Abs(x - z) > Math.Abs(y - z))
+                Console.WriteLine("Cat B catches the mouse");
+            else
+                Console.WriteLine("Mouse C escapes, since both the cat are busy in fighting");
         }
     }
 }

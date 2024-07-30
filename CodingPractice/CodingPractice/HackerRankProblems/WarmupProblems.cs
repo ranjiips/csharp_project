@@ -195,5 +195,24 @@ namespace CodingPractice.HackerRankProblems
             DateTime t = Convert.ToDateTime(s);
             Console.WriteLine(t.ToString("HH:mm:ss"));
         }
+
+        public void FindMedian()
+        {
+            /*The median of a list of numbers is essentially its middle element after sorting. 
+             * The same number of elements occur after it as before. Given a list of numbers with an 
+             * odd number of elements, find the median?
+             
+            Example:
+            arr=[3,4,5,2,1,0,6]
+
+            The sorted array [0, 1, 2, 3, 4, 5, 6]. The middle element and the median is 3.
+             */
+            StaticClassExamples.ColorfulWriteLine("\n***********  Find Median ***********\n", ConsoleColor.Green);
+            List<int> arr = new List<int> { 3, 4, 5, 2, 1, 0, 6 };
+            arr.Sort();
+            var medianIndex = arr.Count / 2;
+            Console.WriteLine($"Given list is  {string.Join(' ', arr)} and the median value is {arr[medianIndex]}");
+        }
+
     }
 }
