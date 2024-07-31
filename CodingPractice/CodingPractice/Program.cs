@@ -12,7 +12,7 @@ namespace CodingPractice
 
             Console.WriteLine("\npress any key to exit the process...");
             // basic use of "Console.ReadKey()" method 
-            Console.ReadKey();
+            //Console.ReadKey();
         }
 
         public static void SolveWarmUpProblems()
@@ -27,22 +27,27 @@ namespace CodingPractice
             Pages.WarmupProblems.PrintMinimumMaximumSum();
             Pages.WarmupProblems.BirthdayCakeCandles();
             Pages.WarmupProblems.TimeConversion();
+            Pages.WarmupProblems.FindMedian();
         }
 
         public static void SolveImplementationProblems()
         {
             StaticClassExamples.ColorfulWriteLine("\n***********  Solve Hacker Rank - Implementation Problems ***********\n", ConsoleColor.Yellow);
-            Pages.ImplementationProblems.GradingStudents();
-            Pages.ImplementationProblems.CountAppleAndOrange();
-            Pages.ImplementationProblems.NumberLineJumps();
-            Pages.ImplementationProblems.BetweenTwoSets();
-            Pages.ImplementationProblems.BreakingTheRecords();
-            Pages.ImplementationProblems.SubarrayDivision();
-            Pages.ImplementationProblems.DivisibleSumPairs();
-            Pages.ImplementationProblems.MigratoryBirds();
-            Pages.ImplementationProblems.DayOfTheProgrammer();
-            Pages.ImplementationProblems.BillDivision();
-            Pages.ImplementationProblems.SockMerchant();
+            //Pages.ImplementationProblems.GradingStudents();
+            //Pages.ImplementationProblems.CountAppleAndOrange();
+            //Pages.ImplementationProblems.NumberLineJumps();
+            //Pages.ImplementationProblems.BetweenTwoSets();
+            //Pages.ImplementationProblems.BreakingTheRecords();
+            //Pages.ImplementationProblems.SubarrayDivision();
+            //Pages.ImplementationProblems.DivisibleSumPairs();
+            //Pages.ImplementationProblems.MigratoryBirds();
+            //Pages.ImplementationProblems.DayOfTheProgrammer();
+            //Pages.ImplementationProblems.BillDivision();
+            //Pages.ImplementationProblems.SockMerchant();
+            //Pages.ImplementationProblems.DrawingBook();
+            //Pages.ImplementationProblems.CountingValleys();
+            //Pages.ImplementationProblems.ElectronicShops();
+            Pages.ImplementationProblems.CatAndMouse();
         }
     }
 }
