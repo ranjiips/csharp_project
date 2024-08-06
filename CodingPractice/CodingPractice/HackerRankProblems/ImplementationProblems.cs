@@ -647,5 +647,144 @@ namespace CodingPractice.HackerRankProblems
             else
                 Console.WriteLine("Mouse C escapes, since both the cat are busy in fighting");
         }
+
+        public void PickingNumbers()
+        {
+            /*Given an array of integers, find the longest subarray where the absolute difference 
+             * between any two elements is less than or equal to 1.
+
+            Example:
+            a=[1,1,2,2,4,4,5,5,5]
+            There are two subarrays meeting the criterion: [1,1,2,2] and [4,4,5,5,5]. 
+            The maximum length subarray has 5 elements.
+
+            Function Description:
+            pickingNumbers has the following parameter(s):
+            int a[n]: an array of integers
+            
+            Returns:
+            int: the length of the longest subarray that meets the criterion
+             */
+
+            StaticClassExamples.ColorfulWriteLine("\n*********** Picking Numbers ***********\n", ConsoleColor.Green);
+
+            List<int> a = new List<int>() { 1, 1, 2,3, 2, 4, 4, 5, 5,2, 5,6,7,6,6,8,9,8,9,0 };
+            var sortedlist = a.OrderBy(e => e).ToList();
+            List<int> templist = new List<int>();
+            List<int> listLength = new List<int>();
+            int min = sortedlist[0];
+            foreach(int x in sortedlist)
+            {
+                if (x - min <= 1)
+                {
+                    templist.Add(x);
+                }
+                else
+                {
+                    listLength.Add(templist.Count);
+                    min = x;
+                    templist.Clear();
+                    templist.Add(x);
+                }
+            }
+            listLength.Add(templist.Count);
+
+            Console.WriteLine($"The longest sub array is: {listLength.Max()}");
+        }
+
+        public void Hurdle_Race()
+        {
+            /*A video player plays a game in which the character competes in a hurdle race. 
+             * Hurdles are of varying heights, and the characters have a maximum height they can jump. 
+             * There is a magic potion they can take that will increase their maximum jump height by 1 unit
+             * for each dose. How many doses of the potion must the character take to be able to jump 
+             * all of the hurdles. If the character can already clear all of the hurdles, return 0.
+
+            Example:
+            height=[1,2,3,3,2]
+            k=1
+
+            The character can jump 1 unit high initially and must take 3-1=2 doses of potion to be able 
+            to jump all of the hurdles.
+             */
+
+            StaticClassExamples.ColorfulWriteLine("\n*********** The Hurdle Race ***********\n", ConsoleColor.Green);
+
+            int k = 1;
+            List<int> height = new List<int> { 1, 2, 3, 3, 2 };
+            int maxHeight = height.Max();
+            if (maxHeight > k)
+                Console.WriteLine($"Dose required: {maxHeight-k}");
+            else
+                Console.WriteLine($"Dose required: 0");
+        }
+
+        public void DesignerPDFviewer()
+        {
+            /*When a contiguous block of text is selected in a PDF viewer, the selection is highlighted 
+             * with a blue rectangle. In this PDF viewer, each word is highlighted independently.
+             * There is a list of 2 character heights aligned by index to their letters. 
+             * For example, 'a' is at index 0 and 'z' is at index 25. There will also be a string. 
+             * Using the letter heights given, determine the area of the rectangle highlight 
+             * in mm^2 assuming all letters are 1mm wide.
+
+                Example:
+                h=[1, 3, 1, 3, 1, 4, 1, 3, 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7]
+                word = 'zaba'
+
+                z=7,a=1,b=3,z=1
+                length of the word is 4
+
+                The tallest letter in zaba is z at 7mm. The selection area for this word is 4*1mm*7mm=28mm.  
+             */
+
+            StaticClassExamples.ColorfulWriteLine("\n*********** Designer PDF viewer ***********\n", ConsoleColor.Green);
+            List<int> h = new List<int> { 1, 3, 1, 3, 1, 4, 1, 3, 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7 };
+            string word = "zaba";
+            int size = word.Length;
+            int tallestLetter = 1;
+            foreach (char x in word)
+            {                
+                int index = (int)x % 32;
+                if (h[index - 1] > tallestLetter)
+                    tallestLetter = h[index - 1];
+            }
+            Console.WriteLine($"The Size of the highlighted area is {size*tallestLetter}");
+        }
+
+        public void UtopianTree()
+        {
+            /*The Utopian Tree goes through 2 cycles of growth every year. 
+             * Each spring, it doubles in height. Each summer, its height increases by 1 meter.
+
+                A Utopian Tree sapling with a height of 1 meter is planted at the onset of spring. 
+                How tall will the tree be after n growth cycles?
+
+                For example, if the number of growth cycles is n=5, the calculations are as follows:
+
+                Period  Height
+                0          1
+                1          2
+                2          3
+                3          6
+                4          7
+                5          14
+             */
+            StaticClassExamples.ColorfulWriteLine("\n*********** Utopian Tree ***********\n", ConsoleColor.Green);
+            int n = 5;
+
+            //0=1; 1 = 1+1=2; 2 = 2+1=3; 3=3+3=6; 4=+1=7; 5=7+7=14
+            int val = 1;
+            for(int i=0; i<=n; i++)
+            {
+                if (i == 0)
+                    val = val + i;
+                else if (i % 2 == 0)
+                    val = val + 1;
+                else
+                    val = val + val;
+            }
+            Console.WriteLine($"The height of the tree after the given number of cycles {n} is {val}");
+        }
     }
 }
