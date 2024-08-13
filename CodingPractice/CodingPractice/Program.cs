@@ -47,11 +47,12 @@ namespace CodingPractice
             //Pages.ImplementationProblems.DrawingBook();
             //Pages.ImplementationProblems.CountingValleys();
             //Pages.ImplementationProblems.ElectronicShops();
-            Pages.ImplementationProblems.CatAndMouse();
-            Pages.ImplementationProblems.PickingNumbers();
-            Pages.ImplementationProblems.Hurdle_Race();
-            Pages.ImplementationProblems.DesignerPDFviewer();
-            Pages.ImplementationProblems.UtopianTree();
+            //Pages.ImplementationProblems.CatAndMouse();
+            //Pages.ImplementationProblems.PickingNumbers();
+            //Pages.ImplementationProblems.Hurdle_Race();
+            //Pages.ImplementationProblems.DesignerPDFviewer();
+            //Pages.ImplementationProblems.UtopianTree();
+            Pages.ImplementationProblems.AngryProfessor();
         }
     }
 }
